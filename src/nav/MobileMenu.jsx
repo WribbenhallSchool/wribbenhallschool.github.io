@@ -6,6 +6,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
+import { Link } from "react-router-dom";
+
 // Mobile Nav Menu Icons
 import HomeIcon from "@mui/icons-material/Home"; // Home
 import ArticleIcon from "@mui/icons-material/Article"; // Policies
@@ -46,25 +48,25 @@ const MobileMenu = ({ handleOpenNavMenu, handleCloseNavMenu, anchorElNav }) => {
 					},
 				}}
 			>
-				<MenuItem>
+				<MenuItem component={Link} to='/' onClick={handleCloseNavMenu}>
 					<ListItemIcon>
 						<HomeIcon fontSize='small' />
 					</ListItemIcon>
 					Home
 				</MenuItem>
-				<MenuItem>
+				<MenuItem component={Link} to='/policies' onClick={handleCloseNavMenu}>
 					<ListItemIcon>
 						<ArticleIcon fontSize='small' />
 					</ListItemIcon>
 					Our Policies
 				</MenuItem>
-				<MenuItem>
+				<MenuItem component={Link} to='/gallery' onClick={handleCloseNavMenu}>
 					<ListItemIcon>
 						<PhotoIcon fontSize='small' />
 					</ListItemIcon>
 					Our Gallery
 				</MenuItem>
-				<MenuItem>
+				<MenuItem component={Link} to='/contact' onClick={handleCloseNavMenu}>
 					<ListItemIcon>
 						<EmailIcon fontSize='small' />
 					</ListItemIcon>

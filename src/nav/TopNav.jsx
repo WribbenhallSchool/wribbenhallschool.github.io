@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
+import { Link } from "react-router-dom";
+
 import MobileMenu from "./MobileMenu";
 import AccessibilityMenu from "./AccessibilityMenu";
 
@@ -75,24 +77,33 @@ const TopNav = ({ currentTheme, setTheme }) => {
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						<Button
 							onClick={handleCloseNavMenu}
+							component={Link}
+							to='/'
 							sx={{ my: 2, color: "text.secondary", display: "block" }}
 						>
 							Home
 						</Button>
+
 						<Button
 							onClick={handleCloseNavMenu}
+							component={Link}
+							to='/policies'
 							sx={{ my: 2, color: "text.secondary", display: "block" }}
 						>
 							Our Policies
 						</Button>
 						<Button
 							onClick={handleCloseNavMenu}
+							component={Link}
+							to='/gallery'
 							sx={{ my: 2, color: "text.secondary", display: "block" }}
 						>
 							Our Gallery
 						</Button>
 						<Button
 							onClick={handleCloseNavMenu}
+							component={Link}
+							to='/contact'
 							sx={{ my: 2, color: "text.secondary", display: "block" }}
 						>
 							Contact Us

@@ -9,6 +9,10 @@ import { defaultThemeParams } from "./theme";
 import TopNav from "./nav/TopNav";
 
 import Home from "./pages/home/Home";
+import Gallery from "./pages/gallery/Gallery";
+import Policies from "./pages/policies/Policies";
+import Calendar from "./pages/calendar/Calendar";
+import Contact from "./pages/contact/Contact";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -30,10 +34,10 @@ function App() {
 				<TopNav currentTheme={currentThemeParams} setTheme={setTheme} />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					{/* <Route path='/contact' element={<Contact />} />
-				<Route path='/gallery' element={<Gallery />} />
-				<Route path='/policies' element={<Policies />} />
-				<Route path='/calendar' element={<Calendar />} /> */}
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/gallery' element={<Gallery />} />
+					<Route path='/policies' element={<Policies />} />
+					<Route path='/calendar' element={<Calendar />} />
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</Router>

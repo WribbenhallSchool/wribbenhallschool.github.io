@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 const NotFound = () => {
 	return (
 		<Container>
-			<Typography>hello</Typography>
+			<Typography variant='h1'>Page not found</Typography>
 		</Container>
 	);
 };
