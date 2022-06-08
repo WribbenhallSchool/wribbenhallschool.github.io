@@ -5,7 +5,6 @@ import Menu from "@mui/material/Menu";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Divider from "@mui/material/Divider";
-import { createTheme } from "@mui/material/styles";
 
 import SettingsIcon from "@mui/icons-material/Settings"; //Accessibility Icon
 
@@ -59,14 +58,27 @@ const AccessibilitySettings = ({
 				<Divider />
 				<MenuItem
 					onClick={() => {
-						setTheme(defaultThemeParams);
+						// If the font size has been changed
+						if (currentTheme.typography) {
+							const tempTheme = { ...defaultThemeParams };
+							tempTheme.typography = currentTheme.typography;
+							setTheme(tempTheme);
+						} else {
+							setTheme(defaultThemeParams);
+						}
 					}}
 				>
 					<Typography textAlign='center'>Default</Typography>
 				</MenuItem>
 				<MenuItem
 					onClick={() => {
-						setTheme(yellowOnBlackThemeParams);
+						if (currentTheme.typography) {
+							const tempTheme = { ...yellowOnBlackThemeParams };
+							tempTheme.typography = currentTheme.typography;
+							setTheme(tempTheme);
+						} else {
+							setTheme(yellowOnBlackThemeParams);
+						}
 					}}
 				>
 					<Typography textAlign='center'>Yellow on Black</Typography>
@@ -74,6 +86,18 @@ const AccessibilitySettings = ({
 				<Divider />
 				<MenuItem disabled>
 					<Typography textAlign='center'>Font Settings</Typography>
+				</MenuItem>
+				<MenuItem
+					onClick={() => {
+						const tempTheme = { ...currentTheme };
+						const font = {
+							fontSize: 14,
+						};
+						tempTheme.typography = font;
+						setTheme(tempTheme);
+					}}
+				>
+					<Typography textAlign='center'>Default</Typography>
 				</MenuItem>
 				<MenuItem
 					onClick={() => {
@@ -91,7 +115,7 @@ const AccessibilitySettings = ({
 					onClick={() => {
 						const tempTheme = { ...currentTheme };
 						const font = {
-							fontSize: 19,
+							fontSize: 18,
 						};
 						tempTheme.typography = font;
 						setTheme(tempTheme);

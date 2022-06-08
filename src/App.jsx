@@ -19,10 +19,7 @@ function App() {
 	const [createdTheme, setCreatedTheme] = useState(createTheme(defaultThemeParams));
 	const [currentThemeParams, setCurrentThemeParams] = useState(defaultThemeParams);
 
-	console.log(createdTheme);
-
 	const setTheme = (themeParams) => {
-		console.log(themeParams);
 		setCurrentThemeParams(themeParams);
 		setCreatedTheme(createTheme(themeParams));
 	};
