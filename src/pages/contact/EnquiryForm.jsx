@@ -1,33 +1,61 @@
+import React, { useState } from "react";
+
 import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const EnquiryForm = ({ handleSubmit }) => {
+const EnquiryForm = ({ send }) => {
+	const initialFormState = {
+		fullName: "",
+		email: "",
+		message: "",
+	};
+
+	const [formData, updateFormData] = useState(initialFormState);
+
+	const handleChange = (e) => {
+		updateFormData({
+			...formData,
+			[e.target.name]: e.target.value.trim(),
+		});
+	};
+
+	const handleSubmit = (e) => {
+		e.stopPropagation();
+		e.preventDefault();
+		updateFormData(initialFormState);
+		document.getElementById("enquiry-form").reset();
+		send(formData);
+	};
+
 	return (
 		<Card>
 			<CardContent>
-				<Container>
+				<form onSubmit={handleSubmit} id='enquiry-form'>
 					<Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
 						Make an Enquiry
 					</Typography>
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
+						onChange={handleChange}
 						label='Your Full Name'
+						name='fullName'
+						required
 						variant='standard'
 						fullWidth
 					/>
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
 						label='Your Email'
+						required
+						onChange={handleChange}
+						name='email'
+						type='email'
 						variant='standard'
 						fullWidth
 					/>
@@ -37,14 +65,22 @@ const EnquiryForm = ({ handleSubmit }) => {
 					<TextField
 						style={{ margin: "5px" }}
 						placeholder='Your message'
+						onChange={handleChange}
+						name='message'
+						required
 						multiline
 						rows={3}
 						fullWidth
 					/>
-				</Container>
+				</form>
 			</CardContent>
 			<CardActions>
-				<Button size='small' variant='contained' onClick={handleSubmit}>
+				<Button
+					size='small'
+					form='enquiry-form'
+					variant='contained'
+					type='submit'
+				>
 					Submit
 				</Button>
 			</CardActions>

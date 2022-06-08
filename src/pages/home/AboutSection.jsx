@@ -2,10 +2,8 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 
 const AboutSection = () => {
 	return (
@@ -69,7 +67,7 @@ const AboutSection = () => {
 							</Typography>
 						</CardContent>
 						<CardActions>
-							<Button size='small'>Contact Us</Button>
+							<Button size='small'>View Our Ofsted Report</Button>
 						</CardActions>
 					</Card>
 				</Grid>
@@ -99,7 +97,38 @@ const AboutSection = () => {
 							</Typography>
 						</CardContent>
 						<CardActions>
+							<Button size='small'>View Our Target Profile</Button>
+						</CardActions>
+					</Card>
+				</Grid>
+				<Grid item sm={12}>
+					<Card
+						sx={{
+							height: "100%",
+							display: "flex",
+							flexDirection: "column",
+						}}
+					>
+						<CardContent sx={{ flexGrow: 1 }}>
+							<Typography gutterBottom variant='h5' component='h2'>
+								Our Details
+							</Typography>
+							<Typography variant='p' paragraph>
+								We provide Specialist Education for SEMH children aged
+								5-11 years, who are too anxious to attend schools and
+								other establishments.
+							</Typography>
+							<Typography variant='p' paragraph>
+								Our Key Pupil Profile states the main issues that we are
+								able to/not able to provide for. Each child’s application
+								will be considered, by the proprietor, on an individual
+								basis, taking into consideration the attributes of the
+								current pupils.
+							</Typography>
+						</CardContent>
+						<CardActions>
 							<Button size='small'>Contact Us</Button>
+							<Button size='small'>Find Us On Google Maps</Button>
 						</CardActions>
 					</Card>
 				</Grid>

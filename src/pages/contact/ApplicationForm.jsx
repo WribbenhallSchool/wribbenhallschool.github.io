@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
 import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -14,33 +11,67 @@ import Select from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 
-const ApplicationForm = ({ handleSubmit }) => {
-	const [attendance, setAttendance] = React.useState("");
+const ApplicationForm = ({ send }) => {
+	const initialFormState = {
+		childFullName: "",
+		childDOB: "",
+		behaviourNotes: "",
+		currentSchool: "",
+		attendance: "",
+		parentFullName: "",
+		email: "",
+		appointmentDate: "",
+		additionalNotes: "",
+	};
+
+	const [formData, updateFormData] = useState(initialFormState);
+
+	const handleChange = (e) => {
+		updateFormData({
+			...formData,
+			[e.target.name]: e.target.value.trim(),
+		});
+	};
 
 	const handleAttendanceChange = (event) => {
-		setAttendance(event.target.value);
+		updateFormData({
+			...formData,
+			attendance: event.target.value,
+		});
+	};
+
+	const handleSubmit = (e) => {
+		e.stopPropagation();
+		e.preventDefault();
+		updateFormData(initialFormState);
+		document.getElementById("application-form").reset();
+		send(formData);
 	};
 
 	return (
 		<Card sx={{ minWidth: 275 }}>
 			<CardContent>
-				<Container>
+				<form onSubmit={handleSubmit} id='application-form'>
 					<Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
 						Make an Enquiry
 					</Typography>
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
-						label="Your Child's Full Name"
+						label="Your child's full name"
 						variant='standard'
+						required
+						onChange={handleChange}
+						name='childFullName'
 						fullWidth
 					/>
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
-						label="Your Child's DOB"
+						label="Your child's DOB"
+						required
 						helperText='DD/MM/YYYY'
+						onChange={handleChange}
+						name='childDOB'
 						variant='standard'
 						fullWidth
 					/>
@@ -51,6 +82,9 @@ const ApplicationForm = ({ handleSubmit }) => {
 						style={{ margin: "5px" }}
 						placeholder='Please include any behaviour/anxiety or medical conditions issues your child may have...'
 						multiline
+						required
+						onChange={handleChange}
+						name='behaviourNotes'
 						rows={3}
 						fullWidth
 					/>
@@ -59,21 +93,22 @@ const ApplicationForm = ({ handleSubmit }) => {
 
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
-						label="Your Child's Current School"
+						onChange={handleChange}
+						label="Your child's current school"
+						name='currentSchool'
 						variant='standard'
 						fullWidth
 					/>
 					<br />
 					<br />
 					<FormControl fullWidth>
-						<InputLabel id='demo-simple-select-label'>
-							Current Attendance
+						<InputLabel id='attendance-select-label'>
+							Current attendance
 						</InputLabel>
 						<Select
-							labelId='demo-simple-select-label'
-							id='demo-simple-select'
-							value={attendance}
+							labelId='attendance-select-label'
+							style={{ textAlign: "left" }}
+							value={formData.attendance}
 							label='Current Attendance'
 							onChange={handleAttendanceChange}
 						>
@@ -84,24 +119,29 @@ const ApplicationForm = ({ handleSubmit }) => {
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
-						label="Your Child's Full Name"
+						onChange={handleChange}
+						label='Your full name'
+						required
+						name='parentFullName'
 						variant='standard'
 						fullWidth
 					/>
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
-						label='Your Email Address'
+						onChange={handleChange}
+						label='Your email address'
+						required
+						name='email'
 						variant='standard'
 						fullWidth
 					/>
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						id='standard-basic'
+						onChange={handleChange}
 						label='Prefered appoinment date'
+						name='appointmentDate'
 						helperText='DD/MM/YYYY (Leave empty to discuss this at a later date)'
 						variant='standard'
 						fullWidth
@@ -111,14 +151,21 @@ const ApplicationForm = ({ handleSubmit }) => {
 					<TextField
 						style={{ margin: "5px" }}
 						placeholder='Additional notes or questions...'
+						name='additionalNotes'
+						onChange={handleChange}
 						multiline
 						rows={3}
 						fullWidth
 					/>
-				</Container>
+				</form>
 			</CardContent>
 			<CardActions>
-				<Button size='small' variant='contained' onClick={handleSubmit}>
+				<Button
+					size='small'
+					variant='contained'
+					type='submit'
+					form='application-form'
+				>
 					Submit
 				</Button>
 			</CardActions>

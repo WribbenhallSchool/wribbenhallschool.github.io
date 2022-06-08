@@ -7,6 +7,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { defaultThemeParams } from "./theme";
 
 import Nav from "./nav";
+import Footer from "./Footer";
 import Pages from "./pages/Pages";
 import NotFound from "./pages/NotFound";
 
@@ -35,6 +36,7 @@ function App() {
 					))}
 					<Route path='*' element={<NotFound />} />
 				</Routes>
+				<Footer />
 			</Router>
 		</ThemeProvider>
 	);

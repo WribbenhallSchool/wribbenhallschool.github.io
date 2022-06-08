@@ -16,6 +16,12 @@ export const defaultThemeParams = {
 			navActive: "#FFFFFF",
 		},
 	},
+	transitions: {
+		duration: {
+			enteringScreen: 200,
+			leavingScreen: 100,
+		},
+	},
 };
 
 export const yellowOnBlackThemeParams = {
