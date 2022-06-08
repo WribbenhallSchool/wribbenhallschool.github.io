@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
-const AboutSection = () => {
+const AboutSection = ({ setTargetModalOpen }) => {
 	return (
 		<section>
 			<Typography variant='h4' gutterBottom>
@@ -97,7 +97,14 @@ const AboutSection = () => {
 							</Typography>
 						</CardContent>
 						<CardActions>
-							<Button size='small'>View Our Target Profile</Button>
+							<Button
+								size='small'
+								onClick={() => {
+									setTargetModalOpen(true);
+								}}
+							>
+								View Our Target Profile
+							</Button>
 						</CardActions>
 					</Card>
 				</Grid>
