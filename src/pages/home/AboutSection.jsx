@@ -36,13 +36,34 @@ const AboutSection = () => {
 							<Typography variant='p'>
 								<ul>
 									<li>
-										<a href=''>Herefordshire County Council</a>
+										<a
+											href='https://www.wisherefordshire.org/marketplace/cat/vendor/1776'
+											target='_blank'
+											rel='noreferrer'
+											style={{ color: "inherit" }}
+										>
+											Herefordshire County Council
+										</a>
 									</li>
 									<li>
-										<a href=''>Staffordshire County Council</a>
+										<a
+											href='https://www.staffordshireconnects.info/kb5/staffordshire/directory/service.page?id=k_BV9WkXsp8&localofferchannel=0'
+											target='_blank'
+											rel='noreferrer'
+											style={{ color: "inherit" }}
+										>
+											Staffordshire County Council
+										</a>
 									</li>
 									<li>
-										<a href=''>Worcestershire Children First</a>
+										<a
+											href='https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Local%20Offer%20Worestershire.docx'
+											target='_blank'
+											rel='noreferrer'
+											style={{ color: "inherit" }}
+										>
+											Worcestershire Children First
+										</a>
 									</li>
 								</ul>
 							</Typography>

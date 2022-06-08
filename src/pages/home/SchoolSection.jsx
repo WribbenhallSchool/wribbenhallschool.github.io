@@ -26,29 +26,6 @@ const SchoolSection = () => {
 						<CardMedia
 							component='img'
 							height='190'
-							image={require("../../images/school/classroom.jpg")}
-							alt='classroom'
-						/>
-						<CardContent>
-							<Typography gutterBottom variant='h5' component='div'>
-								Our Classroom
-							</Typography>
-							<Typography variant='body2' color='text.secondary'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Doloribus nam asperiores et esse.
-							</Typography>
-						</CardContent>
-						<CardActions>
-							<Button size='small'>Share</Button>
-							<Button size='small'>Learn More</Button>
-						</CardActions>
-					</Card>
-				</Grid>
-				<Grid item>
-					<Card sx={{ maxWidth: 345 }}>
-						<CardMedia
-							component='img'
-							height='190'
 							image={require("../../images/school/children.jpeg")}
 							alt='classroom'
 						/>
@@ -114,6 +91,8 @@ const SchoolSection = () => {
 					</Card>
 				</Grid>
 			</Grid>
+			<br />
+			<br />
 		</section>
 	);
 };

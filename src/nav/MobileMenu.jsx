@@ -8,13 +8,12 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 
 import { Link } from "react-router-dom";
 
-// Mobile Nav Menu Icons
-import HomeIcon from "@mui/icons-material/Home"; // Home
-import ArticleIcon from "@mui/icons-material/Article"; // Policies
-import PhotoIcon from "@mui/icons-material/Photo"; // Our Gallery
-import EmailIcon from "@mui/icons-material/Email"; // Contact Us
-
-const MobileMenu = ({ handleOpenNavMenu, handleCloseNavMenu, anchorElNav }) => {
+const MobileMenu = ({
+	handleOpenMobileMenu,
+	handleCloseMobileMenu,
+	anchorElNav,
+	pages,
+}) => {
 	return (
 		<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
 			<IconButton
@@ -22,7 +21,7 @@ const MobileMenu = ({ handleOpenNavMenu, handleCloseNavMenu, anchorElNav }) => {
 				aria-label='account of current user'
 				aria-controls='menu-appbar'
 				aria-haspopup='true'
-				onClick={handleOpenNavMenu}
+				onClick={handleOpenMobileMenu}
 				color='secondary'
 			>
 				<MenuIcon />
@@ -40,7 +39,7 @@ const MobileMenu = ({ handleOpenNavMenu, handleCloseNavMenu, anchorElNav }) => {
 					horizontal: "left",
 				}}
 				open={Boolean(anchorElNav)}
-				onClose={handleCloseNavMenu}
+				onClose={handleCloseMobileMenu}
 				sx={{
 					display: {
 						xs: "block",
@@ -48,30 +47,17 @@ const MobileMenu = ({ handleOpenNavMenu, handleCloseNavMenu, anchorElNav }) => {
 					},
 				}}
 			>
-				<MenuItem component={Link} to='/' onClick={handleCloseNavMenu}>
-					<ListItemIcon>
-						<HomeIcon fontSize='small' />
-					</ListItemIcon>
-					Home
-				</MenuItem>
-				<MenuItem component={Link} to='/policies' onClick={handleCloseNavMenu}>
-					<ListItemIcon>
-						<ArticleIcon fontSize='small' />
-					</ListItemIcon>
-					Our Policies
-				</MenuItem>
-				<MenuItem component={Link} to='/gallery' onClick={handleCloseNavMenu}>
-					<ListItemIcon>
-						<PhotoIcon fontSize='small' />
-					</ListItemIcon>
-					Our Gallery
-				</MenuItem>
-				<MenuItem component={Link} to='/contact' onClick={handleCloseNavMenu}>
-					<ListItemIcon>
-						<EmailIcon fontSize='small' />
-					</ListItemIcon>
-					Contact Us
-				</MenuItem>
+				{Object.entries(pages).map((page, i) => (
+					<MenuItem
+						component={Link}
+						to={page[1].route}
+						onClick={handleCloseMobileMenu}
+						key={i}
+					>
+						<ListItemIcon>{page[1].icon}</ListItemIcon>
+						{page[0]}
+					</MenuItem>
+				))}
 			</Menu>
 		</Box>
 	);

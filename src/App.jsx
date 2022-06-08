@@ -6,13 +6,8 @@ import { ThemeProvider } from "@mui/material/styles";
 
 import { defaultThemeParams } from "./theme";
 
-import TopNav from "./nav/TopNav";
-
-import Home from "./pages/home/Home";
-import Gallery from "./pages/gallery/Gallery";
-import Policies from "./pages/policies/Policies";
-import Calendar from "./pages/calendar/Calendar";
-import Contact from "./pages/contact/Contact";
+import Nav from "./nav";
+import Pages from "./pages/Pages";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -28,13 +23,16 @@ function App() {
 		<ThemeProvider theme={createdTheme}>
 			<CssBaseline />
 			<Router>
-				<TopNav currentTheme={currentThemeParams} setTheme={setTheme} />
+				<Nav
+					currentTheme={currentThemeParams}
+					setTheme={setTheme}
+					pages={Pages}
+				/>
 				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/contact' element={<Contact />} />
-					<Route path='/gallery' element={<Gallery />} />
-					<Route path='/policies' element={<Policies />} />
-					<Route path='/calendar' element={<Calendar />} />
+					{/* Each of the defined pages within the Pages object */}
+					{Object.entries(Pages).map((page, i) => (
+						<Route key={i} path={page[1].route} element={page[1].element} />
+					))}
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</Router>

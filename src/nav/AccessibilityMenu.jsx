@@ -19,22 +19,11 @@ const AccessibilitySettings = ({
 }) => {
 	return (
 		<Box sx={{ flexGrow: 0 }}>
-			<div
-				style={{
-					display: "flex",
-					alignItems: "center",
-					flexWrap: "wrap",
-				}}
-			>
-				<Typography color='secondary'>
-					<span style={{ paddingRight: "5px" }}>Accessiblity</span>
-				</Typography>
-				<Tooltip title='Open accessibility menu'>
-					<IconButton onClick={handleOpenAccessibilityMenu} sx={{ p: 0 }}>
-						<SettingsIcon color='secondary' />
-					</IconButton>
-				</Tooltip>
-			</div>
+			<Tooltip title='Open accessibility menu'>
+				<IconButton onClick={handleOpenAccessibilityMenu} sx={{ p: 0 }}>
+					<SettingsIcon color='secondary' />
+				</IconButton>
+			</Tooltip>
 
 			<Menu
 				sx={{ mt: "45px" }}

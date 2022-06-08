@@ -8,12 +8,12 @@ export const defaultThemeParams = {
 		},
 		background: {
 			default: "#FFFFFF",
-			secondary: "#e9ecef",
+			secondary: "#212529",
 		},
 		text: {
 			primary: "#000000",
 			secondary: "#6c757d",
-			navTitle: "#FFFFFF",
+			navActive: "#FFFFFF",
 		},
 	},
 };
@@ -21,19 +21,20 @@ export const defaultThemeParams = {
 export const yellowOnBlackThemeParams = {
 	palette: {
 		primary: {
-			main: "#000000",
+			main: "#FFFF00",
 		},
 		secondary: {
 			main: "#FFFF00",
 		},
 		background: {
 			default: "#000000",
+			secondary: "#000000",
 			paper: "#000000",
 		},
 		text: {
 			primary: "#FFFF00",
 			secondary: "#FFFF00",
-			navTitle: "#FFFF00",
+			navActive: "#FFFF00",
 		},
 	},
 };
