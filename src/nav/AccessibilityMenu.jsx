@@ -6,9 +6,13 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Divider from "@mui/material/Divider";
 
-import SettingsIcon from "@mui/icons-material/Settings"; //Accessibility Icon
+import SettingsIcon from "@mui/icons-material/Settings";
 
-import { defaultThemeParams, yellowOnBlackThemeParams } from "../theme";
+import {
+	defaultThemeParams,
+	yellowOnBlackThemeParams,
+	blackOnCreamThemeParams,
+} from "../themes";
 
 const AccessibilitySettings = ({
 	handleOpenAccessibilityMenu,
@@ -61,6 +65,7 @@ const AccessibilitySettings = ({
 				</MenuItem>
 				<MenuItem
 					onClick={() => {
+						// If the font size has been changed
 						if (currentTheme.typography) {
 							const tempTheme = { ...yellowOnBlackThemeParams };
 							tempTheme.typography = currentTheme.typography;
@@ -71,6 +76,20 @@ const AccessibilitySettings = ({
 					}}
 				>
 					<Typography textAlign='center'>Yellow on Black</Typography>
+				</MenuItem>
+				<MenuItem
+					onClick={() => {
+						// If the font size has been changed
+						if (currentTheme.typography) {
+							const tempTheme = { ...blackOnCreamThemeParams };
+							tempTheme.typography = currentTheme.typography;
+							setTheme(tempTheme);
+						} else {
+							setTheme(blackOnCreamThemeParams);
+						}
+					}}
+				>
+					<Typography textAlign='center'>Black on Cream</Typography>
 				</MenuItem>
 				<Divider />
 				<MenuItem disabled>

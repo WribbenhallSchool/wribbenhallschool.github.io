@@ -4,7 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
 
-import { defaultThemeParams } from "./theme";
+import { defaultThemeParams } from "./themes";
 
 import Nav from "./nav";
 import Footer from "./Footer";

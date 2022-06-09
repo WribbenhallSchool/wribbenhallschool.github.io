@@ -24,6 +24,27 @@ export const defaultThemeParams = {
 	},
 };
 
+export const blackOnCreamThemeParams = {
+	palette: {
+		primary: {
+			main: "#000000",
+		},
+		secondary: {
+			main: "#000000",
+		},
+		background: {
+			default: "#f9f7c7",
+			secondary: "#f9f7c7",
+			paper: "#f9f7c7",
+		},
+		text: {
+			primary: "#000000",
+			secondary: "#000000",
+			navActive: "#000000",
+		},
+	},
+};
+
 export const yellowOnBlackThemeParams = {
 	palette: {
 		primary: {
