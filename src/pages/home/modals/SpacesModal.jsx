@@ -2,6 +2,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import modalStyle from "./ModalStyle";
+import CloseIcon from "@mui/icons-material/Close";
+import IconButton from "@mui/material/IconButton";
 
 const SpacesModal = ({ isOpen, setOpen }) => {
 	return (
@@ -14,6 +16,15 @@ const SpacesModal = ({ isOpen, setOpen }) => {
 			aria-describedby='modal-modal-description'
 		>
 			<Box sx={modalStyle}>
+				<IconButton
+					aria-label='close'
+					style={{ float: "right" }}
+					onClick={() => {
+						setOpen(false);
+					}}
+				>
+					<CloseIcon />
+				</IconButton>
 				<Typography id='modal-modal-title' variant='h6' component='h2'>
 					Spaces Information
 				</Typography>

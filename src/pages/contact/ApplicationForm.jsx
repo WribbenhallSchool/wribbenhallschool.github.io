@@ -53,7 +53,7 @@ const ApplicationForm = ({ send }) => {
 			<CardContent>
 				<form onSubmit={handleSubmit} id='application-form'>
 					<Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
-						Make an Enquiry
+						Make an Application
 					</Typography>
 					<TextField
 						style={{ margin: "5px" }}

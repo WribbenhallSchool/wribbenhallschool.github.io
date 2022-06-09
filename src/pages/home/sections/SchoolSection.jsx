@@ -6,31 +6,25 @@ import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
+import SectionStyle from "./SectionStyle";
+
 const SchoolSection = ({
 	setResourcesModalOpen,
 	setSpacesModalOpen,
 	setAnimalsModalOpen,
 }) => {
 	return (
-		<section>
-			<br />
-			<br />
+		<section style={SectionStyle}>
 			<Typography variant='h4' gutterBottom>
 				Our School
 			</Typography>
-			<Grid
-				container
-				direction='row'
-				justifyContent='center'
-				alignItems='center'
-				spacing={4}
-			>
-				<Grid item>
-					<Card sx={{ maxWidth: 345 }}>
+			<Grid container spacing={4}>
+				<Grid item xs={12} sm={4}>
+					<Card sx={{ maxWidth: 345, margin: "0 auto" }}>
 						<CardMedia
 							component='img'
 							height='190'
-							image={require("../../images/school/children.jpeg")}
+							image={require("../../../images/school/children.jpeg")}
 							alt='classroom'
 						/>
 						<CardContent sx={{ minHeight: 135 }}>
@@ -54,12 +48,12 @@ const SchoolSection = ({
 						</CardActions>
 					</Card>
 				</Grid>
-				<Grid item>
-					<Card sx={{ maxWidth: 345 }}>
+				<Grid item xs={12} sm={4}>
+					<Card sx={{ maxWidth: 345, margin: "0 auto" }}>
 						<CardMedia
 							component='img'
 							height='190'
-							image={require("../../images/school/living_room.jpg")}
+							image={require("../../../images/school/individual_classroom.jpeg")}
 							alt='classroom'
 						/>
 						<CardContent sx={{ minHeight: 135 }}>
@@ -83,12 +77,12 @@ const SchoolSection = ({
 						</CardActions>
 					</Card>
 				</Grid>
-				<Grid item>
-					<Card sx={{ maxWidth: 345 }}>
+				<Grid item xs={12} sm={4}>
+					<Card sx={{ maxWidth: 345, margin: "0 auto" }}>
 						<CardMedia
 							component='img'
 							height='190'
-							image={require("../../images/school/Animals.jpeg")}
+							image={require("../../../images/school/Animals.jpeg")}
 							alt='classroom'
 						/>
 						<CardContent sx={{ minHeight: 135 }}>
@@ -113,8 +107,6 @@ const SchoolSection = ({
 					</Card>
 				</Grid>
 			</Grid>
-			<br />
-			<br />
 		</section>
 	);
 };

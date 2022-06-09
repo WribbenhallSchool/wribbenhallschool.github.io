@@ -2,9 +2,11 @@ import React, { useState } from "react";
 
 import Container from "@mui/material/Container";
 
-import HeroSection from "./HeroSection";
-import AboutSection from "./AboutSection";
-import SchoolSection from "./SchoolSection";
+import HeroSection from "./sections/HeroSection";
+import AboutSection from "./sections/AboutSection";
+import SchoolSection from "./sections/SchoolSection";
+import DetailsSection from "./sections/DetailsSection";
+import StaffSection from "./sections/StaffSection";
 
 import ResourcesModal from "./modals/ResourcesModal";
 import SpacesModal from "./modals/SpacesModal";
@@ -28,6 +30,8 @@ export default function Album() {
 					setAnimalsModalOpen={setAnimalsModalOpen}
 				/>
 				<AboutSection setTargetModalOpen={setTargetModalOpen} />
+				<DetailsSection />
+				<StaffSection />
 			</Container>
 
 			{/* Information Modals */}

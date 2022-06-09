@@ -3,10 +3,6 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-import Logo from "../../images/logo.jpeg";
-import Ofsted from "../../images/ofsted_logo.jpeg";
-import Thrive from "../../images/thrive_logo.jpg";
-
 const HeroSection = () => {
 	return (
 		<section>
@@ -18,7 +14,7 @@ const HeroSection = () => {
 			>
 				<Container maxWidth='sm'>
 					<img
-						src={Logo}
+						src={require("../../../images/school_logo.jpeg")}
 						alt='logo'
 						style={{
 							width: "125px",
@@ -57,7 +53,7 @@ const HeroSection = () => {
 						justifyContent='center'
 					>
 						<img
-							src={Thrive}
+							src={require("../../../images/thrive_logo.jpg")}
 							alt=''
 							style={{
 								width: "100px",
@@ -66,7 +62,7 @@ const HeroSection = () => {
 							}}
 						/>{" "}
 						<img
-							src={Ofsted}
+							src={require("../../../images/ofsted_logo.jpeg")}
 							alt=''
 							style={{
 								width: "100px",
