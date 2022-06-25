@@ -29,7 +29,13 @@ const ResourcesModal = ({ isOpen, setOpen }) => {
 					Resources Information
 				</Typography>
 				<Typography id='modal-modal-description' sx={{ mt: 2 }}>
-					Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+					Natual and open spaces allow the children to calm quickily.
+					It supports them in their learning of academic subjects.
+                    It also allows them to develop strategies for social and
+					emotional development and to increase their self esteem.
+				</Typography>
+				<Typography id='modal-modal-description'>
+					
 				</Typography>
 			</Box>
 		</Modal>

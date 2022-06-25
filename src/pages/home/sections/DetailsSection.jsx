@@ -9,6 +9,7 @@ const DetailsCardStyle = {
 	height: "100%",
 	display: "flex",
 	flexDirection: "column",
+	wordWrap: "break-word",
 };
 
 const DetailsSection = () => {
@@ -18,63 +19,52 @@ const DetailsSection = () => {
 				Our Details
 			</Typography>
 			<Grid container spacing={4}>
-				<Grid item xs={12} md={4}>
+				<Grid item xs={12} sm={4}>
 					<Card sx={DetailsCardStyle}>
 						<CardContent sx={{ flexGrow: 1 }}>
 							<Typography gutterBottom variant='h5' component='h2'>
 								Proprietor/Headteacher
 							</Typography>
 
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
+							<Typography gutterBottom variant='body1' component='h2'>
 								Mr Ellis Wells
 							</Typography>
-							<br />
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								ewells@wribbenhallschool.co.uk
-							</Typography>
-							<br />
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								01299 405383
+
+							<Typography variant='body1' sx={{ fontWeight: "bold" }}>
+								<ul>
+									<li>ewells@wribbenhallschool.co.uk</li>
+									<li>01299 405383</li>
+								</ul>
 							</Typography>
 						</CardContent>
 					</Card>
 				</Grid>
-				<Grid item xs={12} md={4}>
+				<Grid item xs={12} sm={4}>
 					<Card sx={DetailsCardStyle}>
 						<CardContent sx={{ flexGrow: 1 }}>
 							<Typography gutterBottom variant='h5' component='h2'>
 								Our Governor
 							</Typography>
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
+							<Typography gutterBottom variant='body1' component='h2'>
 								Mrs Linda Minnock
 							</Typography>
-							<br />
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								l.minnock@btinternet.com
+
+							<Typography variant='body1' sx={{ fontWeight: "bold" }}>
+								<ul>
+									<li>l.minnock@btinternet.com</li>
+								</ul>
 							</Typography>
 						</CardContent>
 					</Card>
 				</Grid>
-				<Grid item xs={12} md={4}>
+				<Grid item xs={12} sm={4}>
 					<Card sx={DetailsCardStyle}>
 						<CardContent sx={{ flexGrow: 1 }}>
 							<Typography gutterBottom variant='h5' component='h2'>
 								School Address
 							</Typography>
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								21 Crundalls Lane
-							</Typography>
-							<br />
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								Bewdley
-							</Typography>
-							<br />
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								Worcestershire
-							</Typography>
-							<br />
-							<Typography variant='p' sx={{ fontWeight: "bold" }}>
-								DY12 1JL
+							<Typography gutterBottom variant='body1' component='h2'>
+								21 Crundalls Lane, Bewdley, Worcestershire, DY12 1JL
 							</Typography>
 						</CardContent>
 					</Card>

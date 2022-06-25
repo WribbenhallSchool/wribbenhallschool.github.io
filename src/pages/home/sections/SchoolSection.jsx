@@ -28,24 +28,26 @@ const SchoolSection = ({
 							alt='classroom'
 						/>
 						<CardContent sx={{ minHeight: 135 }}>
-							<Typography gutterBottom variant='h5' component='div'>
+							<Typography
+								gutterBottom
+								variant='h5'
+								component='div'
+							>
 								Nature Recourses
 							</Typography>
-							<Typography variant='body2' color='text.secondary' paragraph>
-								The Wyre Forest is one of our commonly used local
-								resources for outdoor activites
+							<Typography
+								variant='body2'
+								color='text.secondary'
+								paragraph
+							>
+								Natual and open spaces allow the children to
+								calm quickily. It supports them in their
+								learning of academic subjects. It also allows
+								them to develop strategies for social and
+								emotional development and to increase their self
+								esteem.
 							</Typography>
 						</CardContent>
-						<CardActions>
-							<Button
-								size='small'
-								onClick={() => {
-									setResourcesModalOpen(true);
-								}}
-							>
-								More Information
-							</Button>
-						</CardActions>
 					</Card>
 				</Grid>
 				<Grid item xs={12} sm={4}>
@@ -57,24 +59,22 @@ const SchoolSection = ({
 							alt='classroom'
 						/>
 						<CardContent sx={{ minHeight: 135 }}>
-							<Typography gutterBottom variant='h5' component='div'>
+							<Typography
+								gutterBottom
+								variant='h5'
+								component='div'
+							>
 								Individual Spaces
 							</Typography>
 							<Typography variant='body2' color='text.secondary'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Doloribus nam asperiores et esse.
+								Pupils often focus better in a calm and
+								individual environment. This reduction in
+								sensory stimulation is achieved by ensuring each
+								pupil has their own individual learning space.
+								The more relaxed children are, the better they
+								learn.
 							</Typography>
 						</CardContent>
-						<CardActions>
-							<Button
-								size='small'
-								onClick={() => {
-									setSpacesModalOpen(true);
-								}}
-							>
-								More Information
-							</Button>
-						</CardActions>
 					</Card>
 				</Grid>
 				<Grid item xs={12} sm={4}>
@@ -86,24 +86,22 @@ const SchoolSection = ({
 							alt='classroom'
 						/>
 						<CardContent sx={{ minHeight: 135 }}>
-							<Typography gutterBottom variant='h5' component='div'>
+							<Typography
+								gutterBottom
+								variant='h5'
+								component='div'
+							>
 								Support Animals
 							</Typography>
 							<Typography variant='body2' color='text.secondary'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Doloribus nam asperiores et esse.
+								Daisy the therapy dog is always on hand to
+								support children when they are anxious or upset.
+								She is a calm and loving influnce and an
+								excellent listener, who creates a peacful,
+								mindful, atmostphere. Skipper the cat supports
+								in quiet moments.
 							</Typography>
 						</CardContent>
-						<CardActions>
-							<Button
-								size='small'
-								onClick={() => {
-									setAnimalsModalOpen(true);
-								}}
-							>
-								More Information
-							</Button>
-						</CardActions>
 					</Card>
 				</Grid>
 			</Grid>

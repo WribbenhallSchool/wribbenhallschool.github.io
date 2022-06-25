@@ -23,21 +23,25 @@ const AboutSection = ({ setTargetModalOpen }) => {
 						}}
 					>
 						<CardContent sx={{ flexGrow: 1 }}>
-							<Typography gutterBottom variant='h5' component='h2'>
+							<Typography
+								gutterBottom
+								variant='h5'
+								component='h2'
+							>
 								What kinds of SEN do we provide for?
 							</Typography>
 							<Typography variant='p'>
-								We are committed to ensuring that all pupils achieve their
-								potential, personally, socially, emotionally and
-								academically across all areas of the curriculum,
-								regardless of their gender, ethnicity, social background
-								or religion.
+								We are committed to ensuring that all pupils
+								achieve their potential, personally, socially,
+								emotionally and academically across all areas of
+								the curriculum, regardless of their gender,
+								ethnicity, social background or religion.
 							</Typography>
 							<Typography variant='p'>
 								<ul>
 									<li>
 										<a
-											href='https://www.wisherefordshire.org/marketplace/cat/vendor/1776'
+											href='https://www.talkcommunitydirectory.org/directory-search/services/?id=fdcf6816-f2d0-4703-9989-ac1900c0afd3&returnUrl=https%3A%2F%2Fwww.talkcommunitydirectory.org%2Fdirectory-search%2F%3FsearchTab%3Dservices%26templateId%3D67361ce3-4020-4243-b4ac-aac400c86642%26sortOption%3DUpdateTime%253Bdesc%26pageNumber%3D4%26pageSize%3D10%26serviceCategories.0%3D2CC4C7FF-D47D-4486-A672-AAC400D359A6'
 											target='_blank'
 											rel='noreferrer'
 											style={{ color: "inherit" }}
@@ -68,6 +72,7 @@ const AboutSection = ({ setTargetModalOpen }) => {
 								</ul>
 							</Typography>
 						</CardContent>
+						{/* https://files.ofsted.gov.uk/v1/file/50169284 */}
 						<CardActions>
 							<Button size='small'>View Our Ofsted Report</Button>
 						</CardActions>
@@ -82,20 +87,25 @@ const AboutSection = ({ setTargetModalOpen }) => {
 						}}
 					>
 						<CardContent sx={{ flexGrow: 1 }}>
-							<Typography gutterBottom variant='h5' component='h2'>
+							<Typography
+								gutterBottom
+								variant='h5'
+								component='h2'
+							>
 								Pupil Profile
 							</Typography>
 							<Typography variant='p' paragraph>
-								We provide Specialist Education for SEMH children aged
-								5-11 years, who are too anxious to attend schools and
-								other establishments.
+								We provide Specialist Education for SEMH
+								children aged 5-11 years, who are too anxious to
+								attend schools and other establishments.
 							</Typography>
 							<Typography variant='p' paragraph>
-								Our Key Pupil Profile states the main issues that we are
-								able to/not able to provide for. Each child’s application
-								will be considered, by the proprietor, on an individual
-								basis, taking into consideration the attributes of the
-								current pupils.
+								Our Key Pupil Profile states the main issues
+								that we are able to/not able to provide for.
+								Each child’s application will be considered, by
+								the proprietor, on an individual basis, taking
+								into consideration the attributes of the current
+								pupils.
 							</Typography>
 						</CardContent>
 						<CardActions>
