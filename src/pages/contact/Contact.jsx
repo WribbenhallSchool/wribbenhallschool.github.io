@@ -76,73 +76,79 @@ const Contact = () => {
 				</Alert>
 			</Snackbar>
 
-			<Container style={{ textAlign: "center" }}>
+			<Container>
 				<Box sx={{ mt: 4 }} />
 				<Typography variant='h4'>Contact Us</Typography>
 
-				{/* Form Options */}
-				<Box sx={{ pt: 4 }}>
-					<Typography
-						variant='h5'
-						style={{ textAlign: "center" }}
-						gutterBottom
+				<div style={{ textAlign: "center" }}>
+					{/* Form Options */}
+					<Box sx={{ pt: 4 }}>
+						<Typography
+							variant='h5'
+							style={{ textAlign: "center" }}
+							gutterBottom
+						>
+							Select a form:
+						</Typography>
+
+						<Stack
+							direction='row'
+							spacing={2}
+							justifyContent='center'
+						>
+							<Button
+								variant={
+									formTemplate === "Enquiry"
+										? "contained"
+										: "outlined"
+								}
+								sx={{ minWidth: 150 }}
+								color='primary'
+								onClick={() => {
+									setFormTemplate("Enquiry");
+								}}
+							>
+								Enquiry
+							</Button>
+							<Button
+								variant={
+									formTemplate === "Application"
+										? "contained"
+										: "outlined"
+								}
+								sx={{ minWidth: 150 }}
+								color='primary'
+								onClick={() => {
+									setFormTemplate("Application");
+								}}
+							>
+								Application
+							</Button>
+						</Stack>
+					</Box>
+
+					{/* Centered Form */}
+					<Grid
+						container
+						alignItems='center'
+						justifyContent='center'
+						sx={{ py: 8 }}
+						p={4}
 					>
-						Select a form:
-					</Typography>
-
-					<Stack direction='row' spacing={2} justifyContent='center'>
-						<Button
-							variant={
-								formTemplate === "Enquiry"
-									? "contained"
-									: "outlined"
-							}
-							sx={{ minWidth: 150 }}
-							color='primary'
-							onClick={() => {
-								setFormTemplate("Enquiry");
-							}}
-						>
-							Enquiry
-						</Button>
-						<Button
-							variant={
-								formTemplate === "Application"
-									? "contained"
-									: "outlined"
-							}
-							sx={{ minWidth: 150 }}
-							color='primary'
-							onClick={() => {
-								setFormTemplate("Application");
-							}}
-						>
-							Application
-						</Button>
-					</Stack>
-				</Box>
-
-				{/* Centered Form */}
-				<Grid
-					container
-					alignItems='center'
-					justifyContent='center'
-					sx={{ py: 8 }}
-					p={4}
-				>
-					<Grid item xs={12} sm={8}>
-						{formTemplate === "Enquiry" ? (
-							<EnquiryForm send={send} />
-						) : (
-							<ApplicationForm send={send} />
-						)}
+						<Grid item xs={12} sm={8}>
+							{formTemplate === "Enquiry" ? (
+								<EnquiryForm send={send} />
+							) : (
+								<ApplicationForm send={send} />
+							)}
+						</Grid>
 					</Grid>
-				</Grid>
 
-				<Typography variant='body1'>
-					Alternatively, email us directly at:
-					ewells@wribbenhallschool.co.uk
-				</Typography>
+					<Typography variant='body1'>
+						Alternatively, email us directly at:
+						ewells@wribbenhallschool.co.uk
+					</Typography>
+				</div>
 			</Container>
 			<br />
 			<br />
