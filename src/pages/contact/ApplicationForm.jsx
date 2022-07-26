@@ -48,11 +48,17 @@ const ApplicationForm = ({ send }) => {
 		send(formData);
 	};
 
+	console.log(formData);
+
 	return (
 		<Card sx={{ minWidth: 275 }}>
 			<CardContent>
 				<form onSubmit={handleSubmit} id='application-form'>
-					<Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
+					<Typography
+						sx={{ fontSize: 14 }}
+						color='text.secondary'
+						gutterBottom
+					>
 						Make an Application
 					</Typography>
 					<TextField
@@ -60,7 +66,7 @@ const ApplicationForm = ({ send }) => {
 						label="Your child's full name"
 						variant='standard'
 						required
-						onChange={handleChange}
+						onInput={handleChange}
 						name='childFullName'
 						fullWidth
 					/>
@@ -70,7 +76,7 @@ const ApplicationForm = ({ send }) => {
 						label="Your child's DOB"
 						required
 						helperText='DD/MM/YYYY'
-						onChange={handleChange}
+						onInput={handleChange}
 						name='childDOB'
 						variant='standard'
 						fullWidth
@@ -83,7 +89,7 @@ const ApplicationForm = ({ send }) => {
 						placeholder='Please include any behaviour/anxiety or medical conditions issues your child may have...'
 						multiline
 						required
-						onChange={handleChange}
+						onInput={handleChange}
 						name='behaviourNotes'
 						rows={3}
 						fullWidth
@@ -93,7 +99,7 @@ const ApplicationForm = ({ send }) => {
 
 					<TextField
 						style={{ margin: "5px" }}
-						onChange={handleChange}
+						onInput={handleChange}
 						label="Your child's current school"
 						name='currentSchool'
 						variant='standard'
@@ -119,7 +125,7 @@ const ApplicationForm = ({ send }) => {
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						onChange={handleChange}
+						onInput={handleChange}
 						label='Your full name'
 						required
 						name='parentFullName'
@@ -129,7 +135,7 @@ const ApplicationForm = ({ send }) => {
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						onChange={handleChange}
+						onInput={handleChange}
 						label='Your email address'
 						required
 						name='email'
@@ -139,7 +145,7 @@ const ApplicationForm = ({ send }) => {
 					<br />
 					<TextField
 						style={{ margin: "5px" }}
-						onChange={handleChange}
+						onInput={handleChange}
 						label='Prefered appoinment date'
 						name='appointmentDate'
 						helperText='DD/MM/YYYY (Leave empty to discuss this at a later date)'
@@ -152,7 +158,7 @@ const ApplicationForm = ({ send }) => {
 						style={{ margin: "5px" }}
 						placeholder='Additional notes or questions...'
 						name='additionalNotes'
-						onChange={handleChange}
+						onInput={handleChange}
 						multiline
 						rows={3}
 						fullWidth

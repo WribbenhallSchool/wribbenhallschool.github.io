@@ -27,21 +27,25 @@ const EnquiryForm = ({ send }) => {
 	const handleSubmit = (e) => {
 		e.stopPropagation();
 		e.preventDefault();
-		updateFormData(initialFormState);
-		document.getElementById("enquiry-form").reset();
 		send(formData);
+		document.getElementById("enquiry-form").reset();
+		updateFormData(initialFormState);
 	};
 
 	return (
 		<Card>
 			<CardContent>
 				<form onSubmit={handleSubmit} id='enquiry-form'>
-					<Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
+					<Typography
+						sx={{ fontSize: 14 }}
+						color='text.secondary'
+						gutterBottom
+					>
 						Make an Enquiry
 					</Typography>
 					<TextField
 						style={{ margin: "5px" }}
-						onChange={handleChange}
+						onInput={handleChange}
 						label='Your Full Name'
 						name='fullName'
 						required
@@ -53,7 +57,7 @@ const EnquiryForm = ({ send }) => {
 						style={{ margin: "5px" }}
 						label='Your Email'
 						required
-						onChange={handleChange}
+						onInput={handleChange}
 						name='email'
 						type='email'
 						variant='standard'
@@ -65,7 +69,7 @@ const EnquiryForm = ({ send }) => {
 					<TextField
 						style={{ margin: "5px" }}
 						placeholder='Your message'
-						onChange={handleChange}
+						onInput={handleChange}
 						name='message'
 						required
 						multiline
