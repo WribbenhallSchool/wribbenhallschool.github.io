@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.95414133.js",
+    "static/media/individual_classroom.jpeg": "/static/media/individual_classroom.9753a5ac94c035f390d2.jpeg",
+    "static/media/Animals.jpeg": "/static/media/Animals.4dd50f9f44da53165628.jpeg",
+    "static/media/children.jpeg": "/static/media/children.94448bf2956be235d8b9.jpeg",
+    "static/media/school_logo.jpeg": "/static/media/school_logo.37222feb3bde500b0eea.jpeg",
+    "static/media/ofsted_logo.jpeg": "/static/media/ofsted_logo.ee569ef367aa89cb2b1e.jpeg",
+    "static/media/EllisWells.png": "/static/media/EllisWells.0114548328da97957723.png",
+    "static/media/SallyWells.png": "/static/media/SallyWells.27e89b0a221cb7cdb28d.png",
+    "static/media/AnthonyArnold.jpeg": "/static/media/AnthonyArnold.253cb8a43d815a933071.jpeg",
+    "static/media/thrive_logo.jpg": "/static/media/thrive_logo.884d595318a8aaa7de05.jpg",
+    "index.html": "/index.html",
+    "main.95414133.js.map": "/static/js/main.95414133.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.95414133.js"
+  ]
+}
