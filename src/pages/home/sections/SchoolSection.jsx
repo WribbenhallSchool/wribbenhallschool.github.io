@@ -1,6 +1,4 @@
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
@@ -8,11 +6,13 @@ import Typography from "@mui/material/Typography";
 
 import SectionStyle from "./SectionStyle";
 
-const SchoolSection = ({
-	setResourcesModalOpen,
-	setSpacesModalOpen,
-	setAnimalsModalOpen,
-}) => {
+const SchoolSection = () => {
+	const cardStyle = {
+		maxWidth: 345,
+		margin: "0 auto",
+		minHeight: 400,
+	};
+
 	return (
 		<section style={SectionStyle}>
 			<Typography variant='h4' gutterBottom>
@@ -20,7 +20,7 @@ const SchoolSection = ({
 			</Typography>
 			<Grid container spacing={4}>
 				<Grid item xs={12} sm={4}>
-					<Card sx={{ maxWidth: 345, margin: "0 auto" }}>
+					<Card sx={cardStyle}>
 						<CardMedia
 							component='img'
 							height='190'
@@ -51,7 +51,7 @@ const SchoolSection = ({
 					</Card>
 				</Grid>
 				<Grid item xs={12} sm={4}>
-					<Card sx={{ maxWidth: 345, margin: "0 auto" }}>
+					<Card sx={cardStyle}>
 						<CardMedia
 							component='img'
 							height='190'
@@ -78,7 +78,7 @@ const SchoolSection = ({
 					</Card>
 				</Grid>
 				<Grid item xs={12} sm={4}>
-					<Card sx={{ maxWidth: 345, margin: "0 auto" }}>
+					<Card sx={cardStyle}>
 						<CardMedia
 							component='img'
 							height='190'
