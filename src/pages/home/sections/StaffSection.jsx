@@ -11,7 +11,12 @@ const Staff = ({ image, name, statement }) => {
 	};
 	return (
 		<Box sx={staffElementStyle}>
-			<img src={image} alt={name} width='90px' style={{ clipPath: "circle()" }} />
+			<img
+				src={image}
+				alt={name}
+				width='90px'
+				style={{ clipPath: "circle()" }}
+			/>
 			<Typography variant='h5'>{name}</Typography>
 			<Typography variant='body1' sx={{ pl: 2, pr: 2 }}>
 				{statement}
@@ -41,7 +46,7 @@ const StaffSection = () => {
 						name={"Ellis Wells"}
 						image={require("../../../images/staff/EllisWells.png")}
 						statement={
-							"I have completed a Post Experience Diploma in Psychology. I have a passion to work with children with additional needs and understand that their environment, interactions and attachment with others has a big impact on their learning."
+							"I am a qualified and experienced, teacher and SENDCo. I have completed a Post Experience Diploma in Psychology. I have a passion to work with children with additional needs and understand that their environment, interactions and attachment with others has a big impact on their learning."
 						}
 					/>
 				</Grid>

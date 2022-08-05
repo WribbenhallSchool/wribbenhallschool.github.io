@@ -70,9 +70,9 @@ const SchoolSection = () => {
 								Pupils often focus better in a calm and
 								individual environment. This reduction in
 								sensory stimulation is achieved by ensuring each
-								pupil has their own individual learning space.
-								The more relaxed children are, the better they
-								learn.
+								pupil can choose to work in their individual
+								learning space. They can also choose to work
+								together or alongside each other.
 							</Typography>
 						</CardContent>
 					</Card>
