@@ -74,7 +74,16 @@ const AboutSection = ({ setTargetModalOpen }) => {
 						</CardContent>
 						{/* https://files.ofsted.gov.uk/v1/file/50169284 */}
 						<CardActions>
-							<Button size='small'>View Our Ofsted Report</Button>
+							<Button
+								size='small'
+								onClick={() =>
+									window.open(
+										"https://files.ofsted.gov.uk/v1/file/50169284"
+									)
+								}
+							>
+								View Our Ofsted Report
+							</Button>
 						</CardActions>
 					</Card>
 				</Grid>
