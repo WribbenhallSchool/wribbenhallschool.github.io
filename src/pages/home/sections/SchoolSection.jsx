@@ -33,7 +33,7 @@ const SchoolSection = () => {
 								variant='h5'
 								component='div'
 							>
-								Nature Recourses
+								Nature Resources
 							</Typography>
 							<Typography
 								variant='body2'
@@ -96,8 +96,8 @@ const SchoolSection = () => {
 							<Typography variant='body2' color='text.secondary'>
 								Daisy the therapy dog is always on hand to
 								support children when they are anxious or upset.
-								She is a calm and loving influnce and an
-								excellent listener, who creates a peacful,
+								She is a calm and loving influence and an
+								excellent listener, who creates a peaceful,
 								mindful, atmostphere. Skipper the cat supports
 								in quiet moments.
 							</Typography>

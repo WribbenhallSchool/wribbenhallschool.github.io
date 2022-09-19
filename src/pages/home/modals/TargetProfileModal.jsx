@@ -26,7 +26,11 @@ const TargetProfileModal = ({ isOpen, setOpen }) => {
 				<Typography variant='h6' component='h2'>
 					Target Profile
 				</Typography>
-				<Typography id='modal-modal-description' sx={{ mt: 2 }} variant='p'>
+				<Typography
+					id='modal-modal-description'
+					sx={{ mt: 2 }}
+					variant='p'
+				>
 					<ul>
 						<li>Anxiety</li>
 						<li>Social phobia (including school phobia)</li>
@@ -35,11 +39,15 @@ const TargetProfileModal = ({ isOpen, setOpen }) => {
 				<Typography variant='body1' sx={{ fontWeight: "bold" }}>
 					This may include any number of these issues:-
 				</Typography>
-				<Typography id='modal-modal-description' sx={{ mt: 2 }} variant='p'>
+				<Typography
+					id='modal-modal-description'
+					sx={{ mt: 2 }}
+					variant='p'
+				>
 					<ul>
 						<li>Selective Mutism</li>
 						<li>Panic disorder</li>
-						<li>Acrophobia</li>
+						<li>Agoraphobia</li>
 						<li>Separation anxiety (including school refusal)</li>
 						<li>Attachment Disorder</li>
 						<li>Autism</li>
@@ -47,15 +55,20 @@ const TargetProfileModal = ({ isOpen, setOpen }) => {
 						<li>Self-harming</li>
 						<li>Suicidal thoughts and behaviour</li>
 						<li>
-							Other, co-occurring conditions may also be present in our
-							target children.
+							Other, co-occurring conditions may also be present
+							in our target children.
 						</li>
 					</ul>
 				</Typography>
 				<Typography variant='body1' sx={{ fontWeight: "bold" }}>
-					Specifically Excluded Profiles include but are not limited to:-
+					Specifically Excluded Profiles include but are not limited
+					to:-
 				</Typography>
-				<Typography id='modal-modal-description' sx={{ mt: 2 }} variant='p'>
+				<Typography
+					id='modal-modal-description'
+					sx={{ mt: 2 }}
+					variant='p'
+				>
 					<ul>
 						<li>
 							Moderate, Severe, and Profound and Multiple Learning
@@ -72,9 +85,9 @@ const TargetProfileModal = ({ isOpen, setOpen }) => {
 					variant='p'
 					paragraph
 				>
-					Each child's application will be considered, by the proprietor, on an
-					individual basis, taking into consideration the attributes of the
-					current pupils.
+					Each child's application will be considered, by the
+					proprietor, on an individual basis, taking into
+					consideration the attributes of the current pupils.
 				</Typography>
 
 				<Typography
@@ -83,8 +96,8 @@ const TargetProfileModal = ({ isOpen, setOpen }) => {
 					variant='p'
 					paragraph
 				>
-					No previous outcomes can be considered a precedent or guide to future
-					decisions made by the proprietor.
+					No previous outcomes can be considered a precedent or guide
+					to future decisions made by the proprietor.
 				</Typography>
 				<Typography
 					id='modal-modal-description'
@@ -92,10 +105,10 @@ const TargetProfileModal = ({ isOpen, setOpen }) => {
 					variant='p'
 					paragraph
 				>
-					This decision will be based on information received from the pupil's
-					current placement, information on their EHCP, information from
-					professionals who have assessed the pupil and an interview with the
-					child and their parent(s)/family.
+					This decision will be based on information received from the
+					pupil's current placement, information on their EHCP,
+					information from professionals who have assessed the pupil
+					and an interview with the child and their parent(s)/family.
 				</Typography>
 			</Box>
 		</Modal>
