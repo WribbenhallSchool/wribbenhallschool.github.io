@@ -52,7 +52,7 @@ const Nav = ({ currentTheme, setTheme, pages }) => {
 						variant='h5'
 						noWrap
 						component='a'
-						href=''
+						href='https://wribbenhallschool.co.uk/'
 						sx={{
 							mr: 2,
 							display: { xs: "flex", md: "none" },
