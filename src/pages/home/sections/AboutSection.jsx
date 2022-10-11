@@ -72,7 +72,6 @@ const AboutSection = ({ setTargetModalOpen }) => {
 								</ul>
 							</Typography>
 						</CardContent>
-						{/* https://files.ofsted.gov.uk/v1/file/50169284 */}
 						<CardActions>
 							<Button
 								size='small'

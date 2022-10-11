@@ -40,8 +40,8 @@ const SchoolSection = () => {
 								color='text.secondary'
 								paragraph
 							>
-								Natual and open spaces allow the children to
-								calm quickily. It supports them in their
+								Natural and open spaces allow the children to
+								calm quickly. It supports them in their
 								learning of academic subjects. It also allows
 								them to develop strategies for social and
 								emotional development and to increase their self
@@ -98,7 +98,7 @@ const SchoolSection = () => {
 								support children when they are anxious or upset.
 								She is a calm and loving influence and an
 								excellent listener, who creates a peaceful,
-								mindful, atmostphere. Skipper the cat supports
+								mindful, atmosphere. Skipper the cat supports
 								in quiet moments.
 							</Typography>
 						</CardContent>
