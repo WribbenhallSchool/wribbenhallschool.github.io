@@ -61,7 +61,7 @@ const StaffSection = () => {
 				</Grid>
 				<Grid item>
 					<Staff
-						name={"Vikky Mathews"}
+						name={"Vikki Mathews"}
 						image={require("../../../images/staff/VikkiMathews.jpg")}
 						statement={
 							"I am a Qualified Teacher with SEN Specialism. I have also completed a Lego Therapy course. I am passionate about working with children with SEN and SEMH and have a great understanding for how to promote learning. I use a nurturing and calm approach to ensure all children feel safe and secure so they are ready to learn. "
