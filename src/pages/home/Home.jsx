@@ -11,21 +11,24 @@ import StaffSection from "./sections/StaffSection";
 import TargetProfileModal from "./modals/TargetProfileModal";
 
 export default function Album() {
-	// Modal Logic
-	const [targetModalOpen, setTargetModalOpen] = useState(false);
+  // Modal Logic
+  const [targetModalOpen, setTargetModalOpen] = useState(false);
 
-	return (
-		<main>
-			<Container maxWidth='lg'>
-				<HeroSection />
-				<SchoolSection />
-				<AboutSection setTargetModalOpen={setTargetModalOpen} />
-				<DetailsSection />
-				<StaffSection />
-			</Container>
+  return (
+    <main>
+      <Container maxWidth="lg">
+        <HeroSection />
+        <SchoolSection />
+        <AboutSection setTargetModalOpen={setTargetModalOpen} />
+        <DetailsSection />
+        <StaffSection />
+      </Container>
 
-			{/* Modals */}
-			<TargetProfileModal isOpen={targetModalOpen} setOpen={setTargetModalOpen} />
-		</main>
-	);
+      {/* Modals */}
+      <TargetProfileModal
+        isOpen={targetModalOpen}
+        setOpen={setTargetModalOpen}
+      />
+    </main>
+  );
 }
