@@ -12,29 +12,29 @@ const Policies = () => {
   const [ofstedFiles, setOfstedFiles] = useState();
   const [safeguardingFiles, setSafeguardingFiles] = useState();
   const [policyFiles, setPolicyFiles] = useState();
+  const [supportFamiliesFiles, setSupportingFamiliesFiles] = useState();
 
   useEffect(() => {
     axios
       .get(
         "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Ofsted"
       )
-      .then((response) => {
-        setOfstedFiles(response.data);
-      });
+      .then((response) => setOfstedFiles(response.data));
     axios
       .get(
         "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Safeguarding"
       )
-      .then((response) => {
-        setSafeguardingFiles(response.data);
-      });
+      .then((response) => setSafeguardingFiles(response.data));
     axios
       .get(
         "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/School policy documents"
       )
-      .then((response) => {
-        setPolicyFiles(response.data);
-      });
+      .then((response) => setPolicyFiles(response.data));
+    axios
+      .get(
+        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Supporting Families"
+      )
+      .then((response) => setSupportingFamiliesFiles(response.data));
   }, []);
 
   return (
@@ -44,7 +44,7 @@ const Policies = () => {
         <Typography variant="h4">Our Policies</Typography>
 
         <Grid container spacing={2} sx={{ mt: 4 }}>
-          <Grid item sm={12} md={4}>
+          <Grid item sm={12} md={3}>
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -69,7 +69,7 @@ const Policies = () => {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item sm={12} md={4}>
+          <Grid item sm={12} md={3}>
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -93,7 +93,7 @@ const Policies = () => {
             </Card>
           </Grid>
 
-          <Grid item sm={12} md={4}>
+          <Grid item sm={12} md={3}>
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -102,6 +102,30 @@ const Policies = () => {
                 <Typography variant="p">
                   <ul style={{ paddingLeft: "20px" }}>
                     {safeguardingFiles?.map((file, i) => (
+                      <li key={i} style={{ padding: "5px" }}>
+                        <a
+                          href={file.download_url}
+                          style={{ color: "inherit" }}
+                        >
+                          {file.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          <Grid item sm={12} md={3}>
+            <Card sx={{ minWidth: 275 }}>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Supporting Families
+                </Typography>
+                <Typography variant="p">
+                  <ul style={{ paddingLeft: "20px" }}>
+                    {supportFamiliesFiles?.map((file, i) => (
                       <li key={i} style={{ padding: "5px" }}>
                         <a
                           href={file.download_url}
