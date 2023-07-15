@@ -30,12 +30,14 @@ const DetailsSection = () => {
                 Mr Ellis Wells
               </Typography>
 
-              <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                <ul>
-                  <li>ewells@wribbenhallschool.co.uk</li>
-                  <li>01299 405383</li>
-                </ul>
-              </Typography>
+              <ul>
+                <li>
+                  <b>ewells@wribbenhallschool.co.uk</b>
+                </li>
+                <li>
+                  <b>01299 405383</b>
+                </li>
+              </ul>
             </CardContent>
           </Card>
         </Grid>
@@ -48,12 +50,11 @@ const DetailsSection = () => {
               <Typography gutterBottom variant="body1" component="h2">
                 Mrs Linda Minnock
               </Typography>
-
-              <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                <ul>
-                  <li>l.minnock@btinternet.com</li>
-                </ul>
-              </Typography>
+              <ul>
+                <li>
+                  <b>l.minnock@btinternet.com</b>
+                </li>
+              </ul>
             </CardContent>
           </Card>
         </Grid>
