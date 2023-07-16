@@ -22,7 +22,7 @@ const Vacancies = () => {
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
-                  Assistant Head DSL
+                  Assistant Head DSL Teacher
                 </Typography>
 
                 <Typography variant="p" gutterBottom>

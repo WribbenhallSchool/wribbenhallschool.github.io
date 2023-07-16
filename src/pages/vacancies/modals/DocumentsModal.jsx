@@ -26,7 +26,7 @@ const DocumentsModal = ({ isOpen, setOpen }) => {
         </IconButton>
 
         <Typography variant="h6" component="h2" gutterBottom>
-          Assistant Head DSL - Application Documents
+          Assistant Head DSL Teacher - Application Documents
         </Typography>
         <Typography id="modal-modal-description" sx={{ mt: 2 }} variant="p">
           <ul>
