@@ -118,7 +118,7 @@ const Gallery = () => {
               </ImageList>
             ) : null}
           </Grid>
-          <Grid item xs={12} sm={8}>
+          {/* <Grid item xs={12} sm={8}>
             {animalImages ? (
               <ImageList>
                 <ImageListItem key="Subheader" cols={2}>
@@ -137,7 +137,7 @@ const Gallery = () => {
                 ))}
               </ImageList>
             ) : null}
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} sm={8}>
             {activitiesImages ? (
               <ImageList>

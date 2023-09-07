@@ -19,7 +19,7 @@ const SchoolSection = () => {
         Our School
       </Typography>
       <Grid container spacing={4}>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -40,7 +40,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -62,7 +62,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        {/* <Grid item xs={12} sm={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -82,7 +82,7 @@ const SchoolSection = () => {
               </Typography>
             </CardContent>
           </Card>
-        </Grid>
+        </Grid> */}
       </Grid>
     </section>
   );
