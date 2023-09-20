@@ -9,7 +9,7 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 
 const Policies = () => {
-  const [ofstedFiles, setOfstedFiles] = useState();
+  const [inspectionFiles, setInspectionFiles] = useState();
   const [safeguardingFiles, setSafeguardingFiles] = useState();
   const [policyFiles, setPolicyFiles] = useState();
   const [supportFamiliesFiles, setSupportingFamiliesFiles] = useState();
@@ -17,9 +17,9 @@ const Policies = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Ofsted"
+        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Inspection"
       )
-      .then((response) => setOfstedFiles(response.data));
+      .then((response) => setInspectionFiles(response.data));
     axios
       .get(
         "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/Safeguarding"
@@ -73,11 +73,11 @@ const Policies = () => {
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Ofsted
+                  Inspection
                 </Typography>
                 <Typography variant="p">
                   <ul style={{ paddingLeft: "20px" }}>
-                    {ofstedFiles?.map((file, i) => (
+                    {inspectionFiles?.map((file, i) => (
                       <li key={i} style={{ padding: "5px" }}>
                         <a
                           href={file.download_url}

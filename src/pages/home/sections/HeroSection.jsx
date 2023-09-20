@@ -51,13 +51,26 @@ const HeroSection = () => {
             access education and therapy through de-escalating school-based
             anxiety.
           </Typography>
+            <img
+                src={require("../../../images/award.png")}
+                alt=""
+                style={{
+                    width: "300px",
+                    height: "auto",
+                    borderRadius: "20px",
+                    display: "block",
+                    margin: "0 auto",
+                    marginBottom: "20px",
+                }}
+            />
           <Stack
             sx={{ pt: 3 }}
-            direction={{ xs: "column", sm: "row" }}
+            direction={{ sm: "column", md: "row" }}
             spacing={4}
             justifyContent="center"
             alignItems="center"
           >
+
             <img
               src={require("../../../images/thrive_logo.jpg")}
               alt=""
