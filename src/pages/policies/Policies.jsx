@@ -27,7 +27,7 @@ const Policies = () => {
       .then((response) => setSafeguardingFiles(response.data));
     axios
       .get(
-        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/School policy documents"
+        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Documents/School Policy"
       )
       .then((response) => setPolicyFiles(response.data));
     axios
