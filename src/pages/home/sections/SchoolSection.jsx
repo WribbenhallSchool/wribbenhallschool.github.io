@@ -19,7 +19,7 @@ const SchoolSection = () => {
         Our School
       </Typography>
       <Grid container spacing={4}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -40,7 +40,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -62,12 +62,12 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        {/* <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
               height="190"
-              image={require("../../../images/school/Animals.jpeg")}
+              image={require("../../../images/staff/Charlie.JPEG")}
               alt="classroom"
             />
             <CardContent sx={{ minHeight: 135 }}>
@@ -75,14 +75,14 @@ const SchoolSection = () => {
                 Support Animals
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Daisy the therapy dog is always on hand to support children when
-                they are anxious or upset. She is a calm and loving influence
-                and an excellent listener, who creates a peaceful, mindful,
-                atmosphere. Skipper the cat supports in quiet moments.
+                Following in the footprints of our previous therapy dog Daisy,
+                Charlie provides a soothing and affectionate presence to support
+                children during challenging moments. Skipper, our resident cat,
+                is also there for quiet times.
               </Typography>
             </CardContent>
           </Card>
-        </Grid> */}
+        </Grid>
       </Grid>
     </section>
   );

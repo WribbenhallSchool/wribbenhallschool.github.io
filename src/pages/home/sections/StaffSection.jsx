@@ -68,6 +68,15 @@ const StaffSection = () => {
             }
           />
         </Grid>
+        <Grid item>
+          <Staff
+            name={"Charlie"}
+            image={require("../../../images/staff/Charlie.JPEG")}
+            statement={
+              "Charlie is our new puppy training to be an Assistance Dog. He is loving, clever and energetic. He enjoys being with people.\n"
+            }
+          />
+        </Grid>
       </Grid>
     </section>
   );
