@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3b5413.css",
-    "main.js": "/static/js/main.646546c9.js",
+    "main.js": "/static/js/main.c70f9154.js",
+    "static/media/Carrie.png": "/static/media/Carrie.4ac288a4089fcd72cb6d.png",
     "static/media/individual_classroom.jpeg": "/static/media/individual_classroom.9753a5ac94c035f390d2.jpeg",
     "static/media/Charlie.JPEG": "/static/media/Charlie.67a5e1447b72e8481734.JPEG",
     "static/media/ISA.jpg": "/static/media/ISA.4b8558b9518841e234d0.jpg",
@@ -17,10 +18,10 @@
     "static/media/thrive_logo.jpg": "/static/media/thrive_logo.884d595318a8aaa7de05.jpg",
     "index.html": "/index.html",
     "main.4b3b5413.css.map": "/static/css/main.4b3b5413.css.map",
-    "main.646546c9.js.map": "/static/js/main.646546c9.js.map"
+    "main.c70f9154.js.map": "/static/js/main.c70f9154.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3b5413.css",
-    "static/js/main.646546c9.js"
+    "static/js/main.c70f9154.js"
   ]
 }
