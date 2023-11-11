@@ -40,29 +40,30 @@ const HeroSection = () => {
           </Typography>
 
           <Typography
-            variant="h5"
+            variant="h6"
             sx={{ fontWeight: "light" }}
             align="center"
             color="text.secondary"
             paragraph
           >
-            We are a Select, home-based Specialist Primary School, supporting
-            children with Social, Emotional and Mental Health conditions to
-            access education and therapy through de-escalating school-based
-            anxiety.
+            At Wribbenhall School we aim to nurture, inspire and re-engage
+            children to achieve their full potential by providing a secure,
+            caring and supportive environment where every child is valued as an
+            individual.
+            <br />
+            We promote children and adults with positive self-esteem, confidence
+            in their judgement, self-reliance, independence, ambition and
+            compassion
           </Typography>
-            <img
-                src={require("../../../images/award.png")}
-                alt=""
-                style={{
-                    width: "300px",
-                    height: "auto",
-                    borderRadius: "20px",
-                    display: "block",
-                    margin: "0 auto",
-                    marginBottom: "20px",
-                }}
-            />
+
+          <Typography
+            variant="h6"
+            sx={{ fontWeight: "light" }}
+            align="center"
+            color="text.secondary"
+            paragraph
+          ></Typography>
+
           <Stack
             sx={{ pt: 3 }}
             direction={{ sm: "column", md: "row" }}
@@ -70,7 +71,6 @@ const HeroSection = () => {
             justifyContent="center"
             alignItems="center"
           >
-
             <img
               src={require("../../../images/thrive_logo.jpg")}
               alt=""
@@ -100,6 +100,15 @@ const HeroSection = () => {
             />
             <img
               src={require("../../../images/ISA.jpg")}
+              alt=""
+              style={{
+                height: "80px",
+                width: "180px",
+                ...imageStyle,
+              }}
+            />
+            <img
+              src={require("../../../images/award.png")}
               alt=""
               style={{
                 height: "80px",
