@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { default as Box, default as Container } from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -11,12 +10,10 @@ import ListSubheader from "@mui/material/ListSubheader";
 import Modal from "@mui/material/Modal";
 
 const Gallery = () => {
-  const [schoolImages, setSchoolImages] = useState();
-  const [hawkbatchImages, setHawkbatchImages] = useState();
-  const [animalImages, setAnimalImages] = useState();
-  const [activitiesImages, setActivitiesImages] = useState();
-
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const activities = ["../../images/gallery/activities/A1.jpg"];
+
   const [modalImageSrc, setModalImageSrc] = useState();
 
   const modalStyle = {
@@ -28,37 +25,6 @@ const Gallery = () => {
     border: "none",
     p: 4,
   };
-
-  useEffect(() => {
-    axios
-      .get(
-        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Images/School"
-      )
-      .then((response) => {
-        setSchoolImages(response.data);
-      });
-    axios
-      .get(
-        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Images/Hawkbatch"
-      )
-      .then((response) => {
-        setHawkbatchImages(response.data);
-      });
-    axios
-      .get(
-        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Images/Animals"
-      )
-      .then((response) => {
-        setAnimalImages(response.data);
-      });
-    axios
-      .get(
-        "https://api.github.com/repos/WribbenhallSchool/Files/contents/Images/Activities"
-      )
-      .then((response) => {
-        setActivitiesImages(response.data);
-      });
-  }, []);
 
   const openModal = (src) => {
     setModalImageSrc(src);
@@ -79,84 +45,151 @@ const Gallery = () => {
           p={4}
         >
           <Grid item xs={12} sm={8}>
-            {schoolImages ? (
-              <ImageList>
-                <ImageListItem key="Subheader" cols={2}>
-                  <ListSubheader component="div">Our School</ListSubheader>
-                </ImageListItem>
-                {schoolImages.map((item) => (
-                  <ImageListItem key={item.download_url}>
-                    <img
-                      src={item.download_url}
-                      srcSet={item.download_url}
-                      alt="Loading..."
-                      loading="lazy"
-                      onClick={() => openModal(item.download_url)}
-                    />
-                  </ImageListItem>
-                ))}
-              </ImageList>
-            ) : null}
+            <ImageList>
+              <ImageListItem key="Subheader" cols={2}>
+                <ListSubheader component="div">Activities</ListSubheader>
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/activities/A1.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/activities/A1.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/activities/A2.JPG")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/activities/A2.JPG"))
+                  }
+                />
+              </ImageListItem>
+            </ImageList>
           </Grid>
           <Grid item xs={12} sm={8}>
-            {hawkbatchImages ? (
-              <ImageList>
-                <ImageListItem key="Subheader" cols={2}>
-                  <ListSubheader component="div">Wyre Forest</ListSubheader>
-                </ImageListItem>
-                {hawkbatchImages.map((item) => (
-                  <ImageListItem key={item.download_url}>
-                    <img
-                      src={item.download_url}
-                      srcSet={item.download_url}
-                      alt="Loading..."
-                      loading="lazy"
-                      onClick={() => openModal(item.download_url)}
-                    />
-                  </ImageListItem>
-                ))}
-              </ImageList>
-            ) : null}
+            <ImageList>
+              <ImageListItem key="Subheader" cols={2}>
+                <ListSubheader component="div">Our School</ListSubheader>
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S1.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S1.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S2.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S2.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S3.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S3.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S4.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S4.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S5.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S5.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S6.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S6.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S7.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S7.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/S8.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/S8.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/school/pupils.JPG")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/school/pupils.JPG"))
+                  }
+                />
+              </ImageListItem>
+            </ImageList>
           </Grid>
-          {/* <Grid item xs={12} sm={8}>
-            {animalImages ? (
-              <ImageList>
-                <ImageListItem key="Subheader" cols={2}>
-                  <ListSubheader component="div">Support Animals</ListSubheader>
-                </ImageListItem>
-                {animalImages.map((item) => (
-                  <ImageListItem key={item.download_url}>
-                    <img
-                      src={item.download_url}
-                      srcSet={item.download_url}
-                      alt="Loading..."
-                      loading="lazy"
-                      onClick={() => openModal(item.download_url)}
-                    />
-                  </ImageListItem>
-                ))}
-              </ImageList>
-            ) : null}
-          </Grid> */}
           <Grid item xs={12} sm={8}>
-            {activitiesImages ? (
-              <ImageList>
-                <ImageListItem key="Subheader" cols={2}>
-                  <ListSubheader component="div">Activities</ListSubheader>
-                </ImageListItem>
-                {activitiesImages.map((item) => (
-                  <ImageListItem key={item.download_url}>
-                    <img
-                      src={item.download_url}
-                      srcSet={item.download_url}
-                      alt="Loading..."
-                      loading="lazy"
-                      onClick={() => openModal(item.download_url)}
-                    />
-                  </ImageListItem>
-                ))}
-              </ImageList>
-            ) : null}
+            <ImageList>
+              <ImageListItem key="Subheader" cols={2}>
+                <ListSubheader component="div">Wyre Forest</ListSubheader>
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/hawkbatch/H1.JPG")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/hawkbatch/H1.JPG"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/hawkbatch/H2.jpg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/hawkbatch/H2.jpg"))
+                  }
+                />
+              </ImageListItem>
+              <ImageListItem>
+                <img
+                  src={require("../../images/gallery/hawkbatch/H3.jpeg")}
+                  alt={"loading..."}
+                  onClick={() =>
+                    openModal(require("../../images/gallery/hawkbatch/H3.jpeg"))
+                  }
+                />
+              </ImageListItem>
+            </ImageList>
           </Grid>
         </Grid>
       </Container>
@@ -175,7 +208,9 @@ const Gallery = () => {
             outline: "none",
           }}
         >
-          <img src={modalImageSrc} alt={"img"} style={{ width: "90%" }} />
+          {modalImageSrc && (
+            <img src={modalImageSrc} alt={"img"} style={{ width: "90%" }} />
+          )}
         </Box>
       </Modal>
     </main>

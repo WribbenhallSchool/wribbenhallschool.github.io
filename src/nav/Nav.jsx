@@ -36,7 +36,7 @@ const Nav = ({ currentTheme, setTheme, pages }) => {
               textDecoration: "none",
             }}
           >
-            Wribbenhal School
+            Wribbenhall School
           </Typography>
 
           {/* Mobile Menu */}

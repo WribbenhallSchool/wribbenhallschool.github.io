@@ -55,7 +55,6 @@ const TopNav = () => {
                   e.stopPropagation();
                   let el = document.getElementById("root");
                   el.style.backgroundColor = "black";
-                  console.log(el);
                 }}
               >
                 +
