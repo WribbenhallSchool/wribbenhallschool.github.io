@@ -1,14 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3b5413.css",
-    "main.js": "/static/js/main.c70f9154.js",
+    "main.js": "/static/js/main.6358a5d9.js",
+    "static/media/pupils.JPG": "/static/media/pupils.947df6f1df2ed86d31ee.JPG",
+    "static/media/A2.JPG": "/static/media/A2.e55e53006bae906326e6.JPG",
+    "static/media/A1.jpg": "/static/media/A1.c842bbfbe6f83c478189.jpg",
+    "static/media/S3.jpg": "/static/media/S3.e06437a897d172f438d9.jpg",
+    "static/media/S7.jpg": "/static/media/S7.4bb9bc8e22198a9edb76.jpg",
+    "static/media/H2.jpg": "/static/media/H2.0779374618308816782b.jpg",
     "static/media/Carrie.png": "/static/media/Carrie.4ac288a4089fcd72cb6d.png",
+    "static/media/S6.jpg": "/static/media/S6.9913d5469739cd701115.jpg",
+    "static/media/S1.jpg": "/static/media/S1.2ef4303487da2595c07a.jpg",
+    "static/media/S8.jpg": "/static/media/S8.5f3254138901f88df7c7.jpg",
+    "static/media/H3.jpeg": "/static/media/H3.effc54f29d97300bd650.jpeg",
     "static/media/individual_classroom.jpeg": "/static/media/individual_classroom.9753a5ac94c035f390d2.jpeg",
     "static/media/Charlie.JPEG": "/static/media/Charlie.67a5e1447b72e8481734.JPEG",
+    "static/media/S5.jpg": "/static/media/S5.cd7977e90e7ffadd31ed.jpg",
     "static/media/ISA.jpg": "/static/media/ISA.4b8558b9518841e234d0.jpg",
     "static/media/lead_partner_with.png": "/static/media/lead_partner_with.f9c76772bb6730ceca0e.png",
     "static/media/VikkiMathews.jpg": "/static/media/VikkiMathews.8532e25d0030adeef709.jpg",
+    "static/media/S4.jpg": "/static/media/S4.51cb97155d1844238c6f.jpg",
     "static/media/award.png": "/static/media/award.2e6491301c46e3b37e5b.png",
+    "static/media/S2.jpg": "/static/media/S2.d0d4e80d56e88e1c1869.jpg",
+    "static/media/H1.JPG": "/static/media/H1.94448bf2956be235d8b9.JPG",
     "static/media/children.jpeg": "/static/media/children.94448bf2956be235d8b9.jpeg",
     "static/media/school_logo.jpeg": "/static/media/school_logo.37222feb3bde500b0eea.jpeg",
     "static/media/ofsted_logo.jpeg": "/static/media/ofsted_logo.ee569ef367aa89cb2b1e.jpeg",
@@ -18,10 +32,10 @@
     "static/media/thrive_logo.jpg": "/static/media/thrive_logo.884d595318a8aaa7de05.jpg",
     "index.html": "/index.html",
     "main.4b3b5413.css.map": "/static/css/main.4b3b5413.css.map",
-    "main.c70f9154.js.map": "/static/js/main.c70f9154.js.map"
+    "main.6358a5d9.js.map": "/static/js/main.6358a5d9.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3b5413.css",
-    "static/js/main.c70f9154.js"
+    "static/js/main.6358a5d9.js"
   ]
 }
