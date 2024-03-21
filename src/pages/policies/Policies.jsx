@@ -23,7 +23,7 @@ const Policies = () => {
           <Card sx={{ minHeight: 400 }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                School policy documents
+                School Policies
               </Typography>
               <Iframe
                 url={`https://drive.google.com/embeddedfolderview?id=${schoolPolicyDocumentsFolderId}#list`}
@@ -36,7 +36,7 @@ const Policies = () => {
           <Card sx={{ minWidth: 275 }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Inspection
+                Inspections
               </Typography>
 
               <Iframe
