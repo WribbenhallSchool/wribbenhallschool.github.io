@@ -19,7 +19,25 @@ const SchoolSection = () => {
         Our School
       </Typography>
       <Grid container spacing={4}>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} md={3}>
+          <Card sx={cardStyle}>
+            <CardMedia
+                component="img"
+                height="190"
+                image={require("../../../images/ISA_Award.JPG")}
+                alt="ISA Awards"
+            />
+            <CardContent sx={{ minHeight: 135 }}>
+              <Typography gutterBottom variant="h5" component="div">
+                ISA Finalists
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                We are proud to be finalist in the 2023 Independent School Association SEND School of the Year Awards.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={3}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -40,7 +58,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} md={3}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -62,7 +80,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} md={3}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"

@@ -54,6 +54,9 @@ const DetailsSection = () => {
                 <li>
                   <b>l.minnock@btinternet.com</b>
                 </li>
+                <li>
+                  <b>01299 405383</b>
+                </li>
               </ul>
             </CardContent>
           </Card>
