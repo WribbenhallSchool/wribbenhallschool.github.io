@@ -9,8 +9,7 @@ const HeroSection = () => {
     marginBottom: "10px",
     textAlign: "center",
   };
-
-  //https://github.com/WribbenhallSchool/wribbenhallschool.github.io/actions/runs/8373537417
+  
   return (
     <section>
       <Box
