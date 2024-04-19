@@ -121,8 +121,8 @@ const HeroSection = () => {
                       onClick={() => window.open("http://www.crisisprevention.com/en-GB/")}
                       alt=""
                       style={{
-                          height: "80px",
-                          width: "180px",
+                          height: "auto",
+                          maxWidth: "100px",
                           cursor: "pointer",
                           ...imageStyle,
                       }}
