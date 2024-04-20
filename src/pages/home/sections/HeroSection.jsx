@@ -9,7 +9,7 @@ const HeroSection = () => {
     marginBottom: "10px",
     textAlign: "center",
   };
-  
+
   return (
     <section>
       <Box
@@ -122,8 +122,8 @@ const HeroSection = () => {
                       onClick={() => window.open("http://www.crisisprevention.com/en-GB/")}
                       alt=""
                       style={{
-                          height: "auto",
-                          maxWidth: "100px",
+                          height: "100px",
+                          maxWidth: "200px",
                           cursor: "pointer",
                           ...imageStyle,
                       }}
