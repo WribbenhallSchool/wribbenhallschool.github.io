@@ -40,11 +40,11 @@ const Pages = {
     element: <Calendar />,
     icon: <CalendarMonthIcon fontSize="small" />,
   },
-  Vacancies: {
-    route: "/vacancies",
-    element: <Vacancies />,
-    icon: <WorkIcon fontSize="small" />,
-  },
+  // Vacancies: {
+  //   route: "/vacancies",
+  //   element: <Vacancies />,
+  //   icon: <WorkIcon fontSize="small" />,
+  // },
 };
 
 export default Pages;

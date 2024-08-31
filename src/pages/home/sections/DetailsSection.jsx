@@ -32,7 +32,7 @@ const DetailsSection = () => {
 
               <ul>
                 <li>
-                  <b>ewells@wribbenhallschool.co.uk</b>
+                  <b>enquiries@wribbenhallschool.co.uk</b>
                 </li>
                 <li>
                   <b>01299 405383</b>
