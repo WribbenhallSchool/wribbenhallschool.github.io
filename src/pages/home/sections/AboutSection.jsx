@@ -92,7 +92,7 @@ const AboutSection = ({ setTargetModalOpen }) => {
                 Pupil Profile
               </Typography>
               <Typography variant="p" paragraph>
-                We provide Specialist Education for SEMH children aged 5-11
+                We provide Specialist Education for SEMH children aged 5-13
                 years, who are too anxious to attend schools and other
                 establishments.
               </Typography>
