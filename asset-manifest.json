@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3b5413.css",
-    "main.js": "/static/js/main.78af451d.js",
+    "main.js": "/static/js/main.ef684926.js",
     "static/media/pupils.JPG": "/static/media/pupils.947df6f1df2ed86d31ee.JPG",
     "static/media/A2.JPG": "/static/media/A2.e55e53006bae906326e6.JPG",
     "static/media/A1.jpg": "/static/media/A1.c842bbfbe6f83c478189.jpg",
@@ -37,10 +37,10 @@
     "static/media/thrive_logo.jpg": "/static/media/thrive_logo.884d595318a8aaa7de05.jpg",
     "index.html": "/index.html",
     "main.4b3b5413.css.map": "/static/css/main.4b3b5413.css.map",
-    "main.78af451d.js.map": "/static/js/main.78af451d.js.map"
+    "main.ef684926.js.map": "/static/js/main.ef684926.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3b5413.css",
-    "static/js/main.78af451d.js"
+    "static/js/main.ef684926.js"
   ]
 }
