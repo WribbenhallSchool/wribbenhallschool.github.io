@@ -15,7 +15,7 @@ const Footer = () => {
         color="textSecondary"
         component="p"
       >
-        &copy; Wribbenhall School {new Date().getFullYear()}
+        &copy; Wribbenhall School {new Date().getFullYear()} VAT# GB478248449
       </Typography>
     </footer>
   );
