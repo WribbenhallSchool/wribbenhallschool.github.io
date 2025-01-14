@@ -146,15 +146,6 @@ const Gallery = () => {
                   }
                 />
               </ImageListItem>
-              <ImageListItem>
-                <img
-                  src={require("../../images/gallery/school/pupils.JPG")}
-                  alt={"loading..."}
-                  onClick={() =>
-                    openModal(require("../../images/gallery/school/pupils.JPG"))
-                  }
-                />
-              </ImageListItem>
             </ImageList>
           </Grid>
           <Grid item xs={12} sm={8}>
