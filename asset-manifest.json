@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3b5413.css",
-    "main.js": "/static/js/main.e2540f1a.js",
+    "main.js": "/static/js/main.7bcad427.js",
     "static/media/A2.JPG": "/static/media/A2.e55e53006bae906326e6.JPG",
     "static/media/A1.jpg": "/static/media/A1.c842bbfbe6f83c478189.jpg",
     "static/media/S3.jpg": "/static/media/S3.e06437a897d172f438d9.jpg",
@@ -29,17 +29,16 @@
     "static/media/DonnaSmith.png": "/static/media/DonnaSmith.2fe540c04ef7c82066c3.png",
     "static/media/school_logo.jpeg": "/static/media/school_logo.37222feb3bde500b0eea.jpeg",
     "static/media/CPI-Logo.png": "/static/media/CPI-Logo.3b142851e2c16f857507.png",
-    "static/media/ofsted_logo.jpeg": "/static/media/ofsted_logo.ee569ef367aa89cb2b1e.jpeg",
     "static/media/EllisWells.png": "/static/media/EllisWells.0114548328da97957723.png",
     "static/media/SallyWells.png": "/static/media/SallyWells.27e89b0a221cb7cdb28d.png",
     "static/media/AnthonyArnold.jpeg": "/static/media/AnthonyArnold.253cb8a43d815a933071.jpeg",
     "static/media/thrive_logo.jpg": "/static/media/thrive_logo.884d595318a8aaa7de05.jpg",
     "index.html": "/index.html",
     "main.4b3b5413.css.map": "/static/css/main.4b3b5413.css.map",
-    "main.e2540f1a.js.map": "/static/js/main.e2540f1a.js.map"
+    "main.7bcad427.js.map": "/static/js/main.7bcad427.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3b5413.css",
-    "static/js/main.e2540f1a.js"
+    "static/js/main.7bcad427.js"
   ]
 }
