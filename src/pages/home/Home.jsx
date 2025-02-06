@@ -18,6 +18,18 @@ export default function Album() {
     <main>
       <Container maxWidth="lg">
         <HeroSection />
+        <div style={{ maxWidth: "600px", margin: "auto", padding: "40px" }}>
+          <p>
+            "Pupils thrive in a secure, encouraging and respectful
+            environment..."
+            <em style={{ fontSize: "14px" }}> and achieve </em> "...rapid
+            improvement in academic performance and in their personal and social
+            skills."{" "}
+            <em style={{ fontSize: "14px" }}>
+              Independent School Inspectorate 2004
+            </em>
+          </p>
+        </div>
         <SchoolSection />
         <AboutSection setTargetModalOpen={setTargetModalOpen} />
         <DetailsSection />
