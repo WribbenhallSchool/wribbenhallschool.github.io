@@ -55,16 +55,6 @@ const StaffSection = () => {
 
         <Grid item>
           <Staff
-            name={"Carrie Lloyd"}
-            image={require("../../../images/staff/Carrie.png")}
-            statement={
-              "I am a qualified and experienced teacher, with a degree in Special Needs Education. I am passionate about working with children to help them become highly skilled and life ready young people, who are prepared for the world ahead, regardless of need or background. I am dedicated to getting education right for each individual.   "
-            }
-          />
-        </Grid>
-
-        <Grid item>
-          <Staff
             name={"Vikki Mathews"}
             image={require("../../../images/staff/VikkiMathews.jpg")}
             statement={

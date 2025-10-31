@@ -91,6 +91,15 @@ const HeroSection = () => {
               }}
             />
             <img
+              src={require("../../../images/Newman_University_Birmingham.png")}
+              alt=""
+              style={{
+                height: "120px",
+                width: "180px",
+                ...imageStyle,
+              }}
+            />
+            <img
               src={require("../../../images/ISA.jpg")}
               alt=""
               style={{

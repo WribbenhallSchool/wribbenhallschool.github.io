@@ -19,7 +19,7 @@ const SchoolSection = () => {
         Our School
       </Typography>
       <Grid container spacing={4}>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <Card sx={cardStyle}>
             <CardMedia
                 component="img"
@@ -37,7 +37,33 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
+          <Card sx={cardStyle}>
+            <CardMedia
+                component="img"
+                height="190"
+                image={require("../../../images/school_logo_small.png")}
+                alt="schooltv"
+            />
+            <CardContent sx={{ minHeight: 135 }}>
+              <Typography gutterBottom variant="h5" component="div">
+                SchoolTV
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Learn ways to help children navigate anxiety with articles on SchoolTV {" "}
+                <a
+                  href="https://wribbenhallschool.uk.schooltv.me/newsletter/anxiety-young-people"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "inherit" }}
+                >
+                  here
+                </a>.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -58,7 +84,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
@@ -80,7 +106,7 @@ const SchoolSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
