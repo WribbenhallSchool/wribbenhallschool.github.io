@@ -118,13 +118,13 @@ const HeroSection = () => {
               }}
             />
             <img
-              src={require("../../../images/CPI-Logo.png")}
+              src={require("../../../images/Team-Teach-Logo.png")}
               onClick={() =>
-                window.open("http://www.crisisprevention.com/en-GB/")
+                window.open("https://www.teamteach.com/")
               }
               alt=""
               style={{
-                height: "100px",
+                height: "30px",
                 maxWidth: "200px",
                 cursor: "pointer",
                 ...imageStyle,
