@@ -56,7 +56,7 @@ const StaffSection = () => {
         <Grid item>
           <Staff
             name={"Vikki Mathews"}
-            image={require("../../../images/staff/VikkiMathews.jpg")}
+            image={require("../../../images/staff/vikki.jpeg")}
             statement={
               "I am a Qualified Teacher with SEN Specialism. I have also completed a Lego Therapy course. I am passionate about working with children with SEN and SEMH and have a great understanding for how to promote learning. I use a nurturing and calm approach to ensure all children feel safe and secure so they are ready to learn. "
             }
@@ -88,7 +88,7 @@ const StaffSection = () => {
             name={"Anthony Arnold"}
             image={require("../../../images/staff/AnthonyArnold.jpeg")}
             statement={
-              "I am a Qualified Learning Support Assistant, experienced in SEN Learning Support. I use humour, patience and story telling to support children's SEMH needs. I use play and art to support their learning."
+              "I am a Qualified Learning Support Assistant, experienced in SEN Learning Support. I have over twenty years of experience in educational settings, encouraging and supporting pupils to access the curriculum and to overcome the challenges they may face. I use my experience and sense of humour to ease the burden felt by learners and help to guide them as they navigate their own individual challenges."
             }
           />
         </Grid>
