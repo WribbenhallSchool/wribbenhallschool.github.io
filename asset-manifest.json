@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3b5413.css",
-    "main.js": "/static/js/main.c8201fb8.js",
+    "main.js": "/static/js/main.ae9270ce.js",
+    "static/media/vikki.jpeg": "/static/media/vikki.25014a12d6235508aa1d.jpeg",
     "static/media/A2.JPG": "/static/media/A2.e55e53006bae906326e6.JPG",
     "static/media/A1.jpg": "/static/media/A1.c842bbfbe6f83c478189.jpg",
     "static/media/S3.jpg": "/static/media/S3.e06437a897d172f438d9.jpg",
@@ -18,7 +19,6 @@
     "static/media/ISA.jpg": "/static/media/ISA.4b8558b9518841e234d0.jpg",
     "static/media/ISA_Award.JPG": "/static/media/ISA_Award.d00820ba1c140bdac2d4.JPG",
     "static/media/lead_partner_with.png": "/static/media/lead_partner_with.f9c76772bb6730ceca0e.png",
-    "static/media/VikkiMathews.jpg": "/static/media/VikkiMathews.8532e25d0030adeef709.jpg",
     "static/media/S4.jpg": "/static/media/S4.51cb97155d1844238c6f.jpg",
     "static/media/award.png": "/static/media/award.2e6491301c46e3b37e5b.png",
     "static/media/JoshDarby.jpg": "/static/media/JoshDarby.f4cc5680a09f318762b8.jpg",
@@ -35,10 +35,10 @@
     "static/media/thrive_logo.jpg": "/static/media/thrive_logo.884d595318a8aaa7de05.jpg",
     "index.html": "/index.html",
     "main.4b3b5413.css.map": "/static/css/main.4b3b5413.css.map",
-    "main.c8201fb8.js.map": "/static/js/main.c8201fb8.js.map"
+    "main.ae9270ce.js.map": "/static/js/main.ae9270ce.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3b5413.css",
-    "static/js/main.c8201fb8.js"
+    "static/js/main.ae9270ce.js"
   ]
 }
