@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 
 import SectionStyle from "./SectionStyle";
 
+const CARD_MEDIA_HEIGHT = 190;
+
 const SchoolSection = () => {
   const cardStyle = {
     maxWidth: 345,
@@ -23,7 +25,7 @@ const SchoolSection = () => {
           <Card sx={cardStyle}>
             <CardMedia
                 component="img"
-                height="190"
+                height={CARD_MEDIA_HEIGHT}
                 image={require("../../../images/ISA_Award.JPG")}
                 alt="ISA Awards"
             />
@@ -41,7 +43,7 @@ const SchoolSection = () => {
           <Card sx={cardStyle}>
             <CardMedia
                 component="img"
-                height="190"
+                height={CARD_MEDIA_HEIGHT}
                 image={require("../../../images/school_logo_small.png")}
                 alt="schooltv"
             />
@@ -67,7 +69,7 @@ const SchoolSection = () => {
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
-              height="190"
+              height={CARD_MEDIA_HEIGHT}
               image={require("../../../images/school/children.jpeg")}
               alt="classroom"
             />
@@ -88,7 +90,7 @@ const SchoolSection = () => {
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
-              height="190"
+              height={CARD_MEDIA_HEIGHT}
               image={require("../../../images/school/individual_classroom.jpeg")}
               alt="classroom"
             />
@@ -110,7 +112,7 @@ const SchoolSection = () => {
           <Card sx={cardStyle}>
             <CardMedia
               component="img"
-              height="190"
+              height={CARD_MEDIA_HEIGHT}
               image={require("../../../images/staff/Charlie.JPEG")}
               alt="classroom"
             />
@@ -123,6 +125,31 @@ const SchoolSection = () => {
                 Charlie provides a soothing and affectionate presence to support
                 children during challenging moments. Skipper, our resident cat,
                 is also there for quiet times.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Card sx={cardStyle}>
+            <CardMedia
+              component="video"
+              src={require("../../../images/Wribbenhall_School_Documentary.MP4")}
+              title="A look around Wribbenhall School"
+              controls
+              preload="metadata"
+              sx={{
+                height: CARD_MEDIA_HEIGHT,
+                width: "100%",
+                objectFit: "cover",
+                backgroundColor: "common.black",
+              }}
+            />
+            <CardContent sx={{ minHeight: 135 }}>
+              <Typography gutterBottom variant="h5" component="div">
+                Safe Spaces
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                A short documentary, made by university students, about how learners, parents and staff feel about our school. 
               </Typography>
             </CardContent>
           </Card>
