@@ -36,26 +36,6 @@ const AboutSection = ({ setTargetModalOpen }) => {
                 <ul>
                   <li>
                     <a
-                      href="https://www.talkcommunitydirectory.org/directory-search/services/?id=fdcf6816-f2d0-4703-9989-ac1900c0afd3&returnUrl=https%3A%2F%2Fwww.talkcommunitydirectory.org%2Fdirectory-search%2F%3FsearchTab%3Dservices%26templateId%3D67361ce3-4020-4243-b4ac-aac400c86642%26sortOption%3DUpdateTime%253Bdesc%26pageNumber%3D4%26pageSize%3D10%26serviceCategories.0%3D2CC4C7FF-D47D-4486-A672-AAC400D359A6"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "inherit" }}
-                    >
-                      Herefordshire County Council
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.staffordshireconnects.info/kb5/staffordshire/directory/service.page?id=k_BV9WkXsp8&localofferchannel=0"
-                      target="_blank"
-                      rel="noreferrer"
-                      style={{ color: "inherit" }}
-                    >
-                      Staffordshire County Council
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Local%20Offer%20Worestershire.docx"
                       target="_blank"
                       rel="noreferrer"
