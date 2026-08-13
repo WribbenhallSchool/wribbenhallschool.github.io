@@ -36,12 +36,11 @@ const AboutSection = ({ setTargetModalOpen }) => {
                 <ul>
                   <li>
                     <a
-                      href="https://raw.githubusercontent.com/EllisCWells/WribbenhallFiles/master/Local%20Offer%20Worestershire.docx"
-                      target="_blank"
-                      rel="noreferrer"
+                      href={require("../../../images/SEN_Information_Report.docx")}
+                      download="SEN Information Report.docx"
                       style={{ color: "inherit" }}
                     >
-                      Worcestershire Children First
+                      SEND Information Report
                     </a>
                   </li>
                 </ul>
