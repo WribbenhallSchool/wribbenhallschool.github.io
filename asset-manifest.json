@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4b3b5413.css",
-    "main.js": "/static/js/main.13ba9088.js",
+    "main.js": "/static/js/main.385cea77.js",
     "static/media/Wribbenhall_School_Documentary.MP4": "/static/media/Wribbenhall_School_Documentary.ea33e2ea76ba219a253f.MP4",
     "static/media/vikki.jpeg": "/static/media/vikki.25014a12d6235508aa1d.jpeg",
     "static/media/A2.JPG": "/static/media/A2.e55e53006bae906326e6.JPG",
@@ -37,10 +37,10 @@
     "static/media/SEN_Information_Report.docx": "/static/media/SEN_Information_Report.c1c9cc99932a0dc69d71.docx",
     "index.html": "/index.html",
     "main.4b3b5413.css.map": "/static/css/main.4b3b5413.css.map",
-    "main.13ba9088.js.map": "/static/js/main.13ba9088.js.map"
+    "main.385cea77.js.map": "/static/js/main.385cea77.js.map"
   },
   "entrypoints": [
     "static/css/main.4b3b5413.css",
-    "static/js/main.13ba9088.js"
+    "static/js/main.385cea77.js"
   ]
 }
