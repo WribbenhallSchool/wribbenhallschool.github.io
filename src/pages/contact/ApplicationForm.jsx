@@ -48,8 +48,6 @@ const ApplicationForm = ({ send }) => {
     send(formData);
   };
 
-  console.log(formData);
-
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>

@@ -135,7 +135,7 @@ const Contact = () => {
           </Grid>
 
           <Typography variant="body1">
-            Alternatively, email us directly at: ewells@wribbenhallschool.co.uk
+            Alternatively, email us directly at: enquiries@wribbenhallschool.co.uk
           </Typography>
         </div>
       </Container>
