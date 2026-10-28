@@ -12,7 +12,7 @@ import { useState } from "react";
 const Vacancies = () => {
   const [targetModalOpen, setTargetModalOpen] = useState(false);
 
-  const vacanicesFolderId = "1FHOK_6Q1xb2zuUucMXO3grLqmKHBcwEg";
+  const vacanicesFolderId = "1tMem99XYFISA-fTdcg4zKwUX0Nji1aWk";
 
   return (
     <main>
@@ -25,7 +25,7 @@ const Vacancies = () => {
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
-                  HLTA
+                  LSA
                 </Typography>
 
                 <Typography variant="p" gutterBottom>
@@ -46,7 +46,7 @@ const Vacancies = () => {
                 <br />
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
                   If you have any questions please contact the school on 01299
-                  405383 or ewells@wribbenhallschool.co.uk
+                  405383 or enquiries@wribbenhallschool.co.uk
                 </Typography>
               </CardContent>
               <Card sx={{ minWidth: 275, maxHeight: 275 }}>
